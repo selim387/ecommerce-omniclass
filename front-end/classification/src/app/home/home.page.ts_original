@@ -1,0 +1,28 @@
+import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Platform } from '@ionic/angular';
+import { map } from 'rxjs/operators';
+
+@Component({
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
+})
+
+export class HomePage {
+
+name: string;
+value: any;
+data: any;
+  
+    constructor(private httpClient: HttpClient) {
+
+      this.httpClient.get('http://localhost:8080/omti/all').subscribe(response  => {
+      console.log('GET Response:', response);
+      this.value = response;
+      //this.data = this.omniclass.level1;
+    });
+  }
+
+
+}

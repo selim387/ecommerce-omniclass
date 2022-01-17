@@ -1,0 +1,7 @@
+{
+  "name": "classification",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

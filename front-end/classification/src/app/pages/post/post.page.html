@@ -1,0 +1,1360 @@
+<ion-header>
+  
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width,initial-scale=1">
+ <meta name="format-detection" content="telephone=no">
+ <title>OMTI</title>
+ 
+<link rel="icon" type="image/png" href="assets/templates/images/favicon.png" />
+<!-- fonts -->
+ 
+ <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
+
+<link rel="stylesheet" href="assets/templates/vendor/bootstrap-4.2.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="assets/templates/vendor/owl-carousel-2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+ <script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>  
+ <script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"> </script>  
+
+
+</ion-header>
+
+<ion-content>
+
+    <!-- quickview-modal -->
+    <div id="quickview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered modal-xl">
+          <div class="modal-content"></div>
+      </div>
+  </div><!-- quickview-modal / end -->
+  <!-- mobilemenu -->
+  <div class="mobilemenu">
+      <div class="mobilemenu__backdrop"></div>
+      <div class="mobilemenu__body">
+          <div class="mobilemenu__header">
+              <div class="mobilemenu__title">Menu</div><button type="button" class="mobilemenu__close"><svg
+                      width="20px" height="20px">
+                      <use xlink:href="assets/templates/images/sprite.svg#cross-20"></use>
+                  </svg></button>
+          </div>
+          <div class="mobilemenu__content">
+              <ul class="mobile-links mobile-links--level--0" data-collapse
+                  data-collapse-opened-class="mobile-links__item--open">
+                  <li class="mobile-links__item" data-collapse-item>
+                      <div class="mobile-links__item-title"><a  [routerLink]="['/index']"
+                              class="mobile-links__item-link">Home</a> <button class="mobile-links__item-toggle"
+                              type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                  height="7px">
+                                  <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                              </svg></button></div>
+                      
+                  </li>
+                  <li class="mobile-links__item" data-collapse-item>
+                      <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">Categories</a>
+                          <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                  class="mobile-links__item-arrow" width="12px" height="7px">
+                                  <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                              </svg></button></div>
+                      <div class="mobile-links__item-sub-links" data-collapse-content>
+                          <ul class="mobile-links mobile-links--level--1">
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#"
+                                          class="mobile-links__item-link">Power Tools</a> <button
+                                          class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                              class="mobile-links__item-arrow" width="12px" height="7px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                          </svg></button></div>
+                                  <div class="mobile-links__item-sub-links" data-collapse-content>
+                                      <ul class="mobile-links mobile-links--level--2">
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Engravers</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Wrenches</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Wall Chaser</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Pneumatic Tools</a></div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#"
+                                          class="mobile-links__item-link">Machine Tools</a> <button
+                                          class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                              class="mobile-links__item-arrow" width="12px" height="7px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                          </svg></button></div>
+                                  <div class="mobile-links__item-sub-links" data-collapse-content>
+                                      <ul class="mobile-links mobile-links--level--2">
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Thread Cutting</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Chip Blowers</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Sharpening Machines</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Pipe Cutters</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Slotting machines</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a href="#"
+                                                      class="mobile-links__item-link">Lathes</a></div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="mobile-links__item" data-collapse-item>
+                      <div class="mobile-links__item-title"><a  [routerLink]="['/shopgrid3']"
+                              class="mobile-links__item-link">Shop</a> <button class="mobile-links__item-toggle"
+                              type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                  height="7px">
+                                  <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                              </svg></button></div>
+                      <div class="mobile-links__item-sub-links" data-collapse-content>
+                          <ul class="mobile-links mobile-links--level--1">
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/shopgrid3']"
+                                          class="mobile-links__item-link">Shop Grid</a> <button
+                                          class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                              class="mobile-links__item-arrow" width="12px" height="7px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                          </svg></button></div>
+                                  <div class="mobile-links__item-sub-links" data-collapse-content>
+                                      <ul class="mobile-links mobile-links--level--2">
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a
+                                                       [routerLink]="['/shopgrid3']"
+                                                      class="mobile-links__item-link">3 Columns Sidebar</a></div>
+                                          </li>
+                                          
+                                      </ul>
+                                  </div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/shoplist']"
+                                          class="mobile-links__item-link">Shop List</a></div>
+                              </li>
+                              
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/product']"
+                                          class="mobile-links__item-link">Product</a> <button
+                                          class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                              class="mobile-links__item-arrow" width="12px" height="7px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                          </svg></button></div>
+                                  <div class="mobile-links__item-sub-links" data-collapse-content>
+                                      <ul class="mobile-links mobile-links--level--2">
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a  [routerLink]="['/product']"
+                                                      class="mobile-links__item-link">Product</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a  [routerLink]="['/product-alt']"
+                                                      class="mobile-links__item-link">Product Alt</a></div>
+                                          </li>
+                                          <li class="mobile-links__item" data-collapse-item>
+                                              <div class="mobile-links__item-title"><a  [routerLink]="['/product-sidebar']"
+                                                      class="mobile-links__item-link">Product Sidebar</a></div>
+                                          </li>
+                                      </ul>
+                                  </div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/cart']"
+                                          class="mobile-links__item-link">Cart</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/checkout']"
+                                          class="mobile-links__item-link">Checkout</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/wishlist']"
+                                          class="mobile-links__item-link">Wishlist</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/compare']"
+                                          class="mobile-links__item-link">Compare</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/account']"
+                                          class="mobile-links__item-link">My Account</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/trackorder']"
+                                          class="mobile-links__item-link">Track Order</a></div>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="mobile-links__item" data-collapse-item>
+                      <div class="mobile-links__item-title"><a  [routerLink]="['/blog-list']"
+                              class="mobile-links__item-link">Blog</a> <button class="mobile-links__item-toggle"
+                              type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                  height="7px">
+                                  <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                              </svg></button></div>
+                      <div class="mobile-links__item-sub-links" data-collapse-content>
+                          <ul class="mobile-links mobile-links--level--1">
+                              
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/blog-list']"
+                                          class="mobile-links__item-link">Blog List</a></div>
+                              </li>
+                             
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/post']"
+                                          class="mobile-links__item-link">Post Page</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/post-without-sidebar']"
+                                          class="mobile-links__item-link">Post Without Sidebar</a></div>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="mobile-links__item" data-collapse-item>
+                      <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">Pages</a>
+                          <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                  class="mobile-links__item-arrow" width="12px" height="7px">
+                                  <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                              </svg></button></div>
+                      <div class="mobile-links__item-sub-links" data-collapse-content>
+                          <ul class="mobile-links mobile-links--level--1">
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/about-us']"
+                                          class="mobile-links__item-link">About Us</a></div>
+                              </li>
+                              
+                              
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/not-found']"
+                                          class="mobile-links__item-link">404</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/terms-conditions']"
+                                          class="mobile-links__item-link">Terms And Conditions</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a  [routerLink]="['/faq']"
+                                          class="mobile-links__item-link">FAQ</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="components.html"
+                                          class="mobile-links__item-link">Components</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="typography.html"
+                                          class="mobile-links__item-link">Typography</a></div>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="mobile-links__item" data-collapse-item>
+                      <div class="mobile-links__item-title"><a data-collapse-trigger
+                              class="mobile-links__item-link">Currency</a> <button class="mobile-links__item-toggle"
+                              type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                  height="7px">
+                                  <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                              </svg></button></div>
+                      <div class="mobile-links__item-sub-links" data-collapse-content>
+                          <ul class="mobile-links mobile-links--level--1">
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">€
+                                          Euro</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">£
+                                          Pound Sterling</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">$
+                                          US Dollar</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">₽
+                                          Russian Ruble</a></div>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li class="mobile-links__item" data-collapse-item>
+                      <div class="mobile-links__item-title"><a data-collapse-trigger
+                              class="mobile-links__item-link">Language</a> <button class="mobile-links__item-toggle"
+                              type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                  height="7px">
+                                  <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                              </svg></button></div>
+                      <div class="mobile-links__item-sub-links" data-collapse-content>
+                          <ul class="mobile-links mobile-links--level--1">
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#"
+                                          class="mobile-links__item-link">English</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#"
+                                          class="mobile-links__item-link">French</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#"
+                                          class="mobile-links__item-link">German</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#"
+                                          class="mobile-links__item-link">Russian</a></div>
+                              </li>
+                              <li class="mobile-links__item" data-collapse-item>
+                                  <div class="mobile-links__item-title"><a href="#"
+                                          class="mobile-links__item-link">Italian</a></div>
+                              </li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+  </div><!-- mobilemenu / end -->
+  <!-- site -->
+  <div class="site">
+      <!-- mobile site__header -->
+      <header class="site__header d-lg-none">
+          <div class="mobile-header mobile-header--sticky mobile-header--stuck">
+              <div class="mobile-header__panel">
+                  <div class="container">
+                      <div class="mobile-header__body"><button class="mobile-header__menu-button">
+
+                      </button> <a class="mobile-header__logo"  [routerLink]="['/index']">
+                                  <img src="/assets/templates/images/OMTI-logo.jpeg" alt="OMTI logo" width="180px" height="54px" >
+                          </a>
+                          <div class="mobile-header__search">
+                              <form class="mobile-header__search-form" action="#"><input
+                                      class="mobile-header__search-input" name="search"
+                                      placeholder="Search over 10,000 products" aria-label="Site search" type="text"
+                                      autocomplete="off"> <button
+                                      class="mobile-header__search-button mobile-header__search-button--submit"
+                                      type="submit"><svg width="20px" height="20px">
+                                          <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                      </svg></button> <button
+                                      class="mobile-header__search-button mobile-header__search-button--close"
+                                      type="button"><svg width="20px" height="20px">
+                                          <use xlink:href="assets/templates/images/sprite.svg#cross-20"></use>
+                                      </svg></button>
+                                  <div class="mobile-header__search-body"></div>
+                              </form>
+                          </div>
+                          <div class="mobile-header__indicators">
+                              <div class="indicator indicator--mobile-search indicator--mobile d-sm-none"><button
+                                      class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                              height="20px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                          </svg></span></button></div>
+                              <div class="indicator indicator--mobile d-sm-flex d-none"><a  [routerLink]="['/wishlist']"
+                                      class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                              height="20px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#heart-20"></use>
+                                          </svg> <span class="indicator__value">0</span></span></a></div>
+                              <div class="indicator indicator--mobile"><a  [routerLink]="['/cart']"
+                                      class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                              height="20px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#cart-20"></use>
+                                          </svg> <span class="indicator__value">3</span></span></a></div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header><!-- mobile site__header / end -->
+      <!-- desktop site__header -->
+      <header class="site__header d-lg-block d-none">
+          <div class="site-header">
+              <!-- .topbar -->
+              <div class="site-header__topbar topbar">
+                  <div class="topbar__container container">
+                      <div class="topbar__row">
+                          <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                   [routerLink]="['/about-us']">About Us</a></div>
+                          <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                   [routerLink]="['/contact-us']">Contacts</a></div>
+                          <div class="topbar__item topbar__item--link"><a class="topbar-link" href="#">Store
+                                  Location</a></div>
+                          <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                   [routerLink]="['/trackorder']">Track Order</a></div>
+                          <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                   [routerLink]="['/blog-list']">Blog</a></div>
+                          <div class="topbar__spring"></div>
+                          <div class="topbar__item">
+                              <div class="topbar-dropdown"><button class="topbar-dropdown__btn" type="button">My
+                                      Account <svg width="7px" height="5px">
+                                          <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                      </svg></button>
+                                  <div class="topbar-dropdown__body">
+                                      <!-- .menu -->
+                                      <ul class="menu menu--layout--topbar">
+                                          <li><a  [routerLink]="['/account']">Login</a></li>
+                                          <li><a  [routerLink]="['/account']">Register</a></li>
+                                          <li><a href="#">Orders</a></li>
+                                          <li><a href="#">Addresses</a></li>
+                                      </ul><!-- .menu / end -->
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="topbar__item">
+                              <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
+                                      type="button">Currency: <span class="topbar__item-value">USD</span> <svg
+                                          width="7px" height="5px">
+                                          <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                      </svg></button>
+                                  <div class="topbar-dropdown__body">
+                                      <!-- .menu -->
+                                      <ul class="menu menu--layout--topbar">
+                                          <li><a href="#">€ Euro</a></li>
+                                          <li><a href="#">£ Pound Sterling</a></li>
+                                          <li><a href="#">$ US Dollar</a></li>
+                                          <li><a href="#">₽ Russian Ruble</a></li>
+                                      </ul><!-- .menu / end -->
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="topbar__item">
+                              <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
+                                      type="button">Language: <span class="topbar__item-value">EN</span> <svg
+                                          width="7px" height="5px">
+                                          <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                      </svg></button>
+                                  <div class="topbar-dropdown__body">
+                                      <!-- .menu -->
+                                      <ul class="menu menu--layout--topbar menu--with-icons">
+                                          <li><a href="#">
+                                                  <div class="menu__icon"><img
+                                                          srcset="assets/templates/images/languages/language-1.png, assets/templates/images/languages/language-1@2x.png 2x"
+                                                          src="assets/templates/images/languages/language-1.png" alt=""></div>English
+                                              </a></li>
+                                          <li><a href="#">
+                                                  <div class="menu__icon"><img
+                                                          srcset="assets/templates/images/languages/language-2.png, assets/templates/images/languages/language-2@2x.png 2x"
+                                                          src="assets/templates/images/languages/language-2.png" alt=""></div>French
+                                              </a></li>
+                                          <li><a href="#">
+                                                  <div class="menu__icon"><img
+                                                          srcset="assets/templates/images/languages/language-3.png, assets/templates/images/languages/language-3@2x.png 2x"
+                                                          src="assets/templates/images/languages/language-3.png" alt=""></div>German
+                                              </a></li>
+                                          <li><a href="#">
+                                                  <div class="menu__icon"><img
+                                                          srcset="assets/templates/images/languages/language-4.png, assets/templates/images/languages/language-4@2x.png 2x"
+                                                          src="assets/templates/images/languages/language-4.png" alt=""></div>Russian
+                                              </a></li>
+                                          <li><a href="#">
+                                                  <div class="menu__icon"><img
+                                                          srcset="assets/templates/images/languages/language-5.png, assets/templates/images/languages/language-5@2x.png 2x"
+                                                          src="assets/templates/images/languages/language-5.png" alt=""></div>Italian
+                                              </a></li>
+                                      </ul><!-- .menu / end -->
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div><!-- .topbar / end -->
+              <div class="site-header__middle container">
+                  <div class="site-header__logo"><a  [routerLink]="['/index']">
+                      <img src="/assets/templates/images/OMTI-logo.jpeg" alt="OMTI logo" width="180px" height="54px" >
+                  </a></div>
+                  <div class="site-header__search">
+                      <div class="search">
+                          <form class="search__form" action="#"><input class="search__input" name="search"
+                                  placeholder="Search over 10,000 products" aria-label="Site search" type="text"
+                                  autocomplete="off"> <button class="search__button" type="submit"><svg width="20px"
+                                      height="20px">
+                                      <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                  </svg></button>
+                              <div class="search__border"></div>
+                          </form>
+                      </div>
+                  </div>
+                  <div class="site-header__phone">
+                      <div class="site-header__phone-title">Customer Service</div>
+                      <div class="site-header__phone-number">(800) 060-0730</div>
+                  </div>
+              </div>
+              <div class="site-header__nav-panel">
+                  <div class="nav-panel">
+                      <div class="nav-panel__container container">
+                          <div class="nav-panel__row">
+                              <div class="nav-panel__departments">
+                                  <!-- .departments -->
+                                  <div class="departments" data-departments-fixed-by="">
+                                      <div class="departments__body">
+                                          <div class="departments__links-wrapper">
+                                              <ul class="departments__links">
+                                                  
+                                                  <li class="departments__item departments__item--menu"><a
+                                                          href="#">Electrical <svg class="departments__link-arrow"
+                                                              width="6px" height="9px">
+                                                              <use
+                                                                  xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                              </use>
+                                                          </svg></a>
+                                                      <div class="departments__menu">
+                                                          <!-- .menu -->
+                                                          <ul class="menu menu--layout--classic">
+                                                              <li><a href="#">Soldering Equipment <svg
+                                                                          class="menu__arrow" width="6px"
+                                                                          height="9px">
+                                                                          <use
+                                                                              xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                                          </use>
+                                                                      </svg></a>
+                                                                  <div class="menu__submenu">
+                                                                      <!-- .menu -->
+                                                                      <ul class="menu menu--layout--classic">
+                                                                          <li><a href="#">Soldering Station</a></li>
+                                                                          <li><a href="#">Soldering Dryers</a></li>
+                                                                          <li><a href="#">Gas Soldering Iron</a></li>
+                                                                          <li><a href="#">Electric Soldering Iron</a>
+                                                                          </li>
+                                                                      </ul><!-- .menu / end -->
+                                                                  </div>
+                                                              </li>
+                                                              <li><a href="#">Light Bulbs</a></li>
+                                                              <li><a href="#">Batteries</a></li>
+                                                              <li><a href="#">Light Fixtures</a></li>
+                                                              <li><a href="#">Warm Floor</a></li>
+                                                              <li><a href="#">Generators</a></li>
+                                                              <li><a href="#">UPS</a></li>
+                                                          </ul><!-- .menu / end -->
+                                                      </div>
+                                                  </li>
+                                                  <li class="departments__item"><a href="#">Power Machinery</a></li>
+                                                  <li class="departments__item"><a href="#">Measurement</a></li>
+                                                  <li class="departments__item"><a href="#">Clothes & PPE</a></li>
+                                                  <li class="departments__item"><a href="#">Plumbing</a></li>
+                                                  <li class="departments__item"><a href="#">Storage & Organization</a>
+                                                  </li>
+                                                  <li class="departments__item"><a href="#">Welding & Soldering</a>
+                                                  </li>
+                                              </ul>
+                                          </div>
+                                      </div><button class="departments__button"><svg class="departments__button-icon"
+                                              width="18px" height="14px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#menu-18x14"></use>
+                                          </svg> Shop By Category <svg class="departments__button-arrow" width="9px"
+                                              height="6px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-9x6"></use>
+                                          </svg></button>
+                                  </div><!-- .departments / end -->
+                              </div><!-- .nav-links -->
+                              <div class="nav-panel__nav-links nav-links">
+                                  <ul class="nav-links__list">
+                                      <li class="nav-links__item nav-links__item--with-submenu"><a
+                                               [routerLink]="['/index']"><span>Home <svg class="nav-links__arrow" width="9px"
+                                                      height="6px">
+                                                      
+                                                  </svg></span></a>
+                                          
+                                      </li>
+                                      
+                                      <li class="nav-links__item nav-links__item--with-submenu"><a
+                                               [routerLink]="['/shopgrid3']"><span>Shop <svg
+                                                      class="nav-links__arrow" width="9px" height="6px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-9x6">
+                                                      </use>
+                                                  </svg></span></a>
+                                          <div class="nav-links__menu">
+                                              <!-- .menu -->
+                                              <ul class="menu menu--layout--classic">
+                                                  <li><a  [routerLink]="['/shopgrid3']">Shop Grid <svg
+                                                              class="menu__arrow" width="6px" height="9px">
+                                                              <use
+                                                                  xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                              </use>
+                                                          </svg></a>
+                                                      <div class="menu__submenu">
+                                                          <!-- .menu -->
+                                                          <ul class="menu menu--layout--classic">
+                                                              <li><a  [routerLink]="['/shopgrid3']">3 Columns
+                                                                      Sidebar</a></li>
+                                                             
+                                                          </ul><!-- .menu / end -->
+                                                      </div>
+                                                  </li>
+                                                  <li><a  [routerLink]="['/shoplist']">Shop List</a></li>
+                                                  
+                                                  <li><a  [routerLink]="['/product']">Product <svg class="menu__arrow"
+                                                              width="6px" height="9px">
+                                                              <use
+                                                                  xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                              </use>
+                                                          </svg></a>
+                                                      <div class="menu__submenu">
+                                                          <!-- .menu -->
+                                                          <ul class="menu menu--layout--classic">
+                                                              <li><a  [routerLink]="['/product']">Product</a></li>
+                                                              <li><a  [routerLink]="['/product-alt']">Product Alt</a></li>
+                                                              <li><a  [routerLink]="['/product-sidebar']">Product Sidebar</a>
+                                                              </li>
+                                                          </ul><!-- .menu / end -->
+                                                      </div>
+                                                  </li>
+                                                  <li><a  [routerLink]="['/cart']">Cart</a></li>
+                                                  <li><a  [routerLink]="['/checkout']">Checkout</a></li>
+                                                  <li><a  [routerLink]="['/wishlist']">Wishlist</a></li>
+                                                  <li><a  [routerLink]="['/compare']">Compare</a></li>
+                                                  <li><a  [routerLink]="['/account']">My Account</a></li>
+                                                  <li><a  [routerLink]="['/trackorder']">Track Order</a></li>
+                                              </ul><!-- .menu / end -->
+                                          </div>
+                                      </li>
+                                      <li class="nav-links__item nav-links__item--with-submenu"><a
+                                               [routerLink]="['/blog-list']"><span>Blog <svg class="nav-links__arrow"
+                                                      width="9px" height="6px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-9x6">
+                                                      </use>
+                                                  </svg></span></a>
+                                          <div class="nav-links__menu">
+                                              <!-- .menu -->
+                                              <ul class="menu menu--layout--classic">
+                                                  
+                                                  <li><a  [routerLink]="['/blog-list']">Blog List</a></li>
+                                                  
+                                                  <li><a  [routerLink]="['/post']">Post Page</a></li>
+                                                  <li><a  [routerLink]="['/post-without-sidebar']">Post Without Sidebar</a>
+                                                  </li>
+                                              </ul><!-- .menu / end -->
+                                          </div>
+                                      </li>
+                                      <li class="nav-links__item nav-links__item--with-submenu"><a
+                                              href="#"><span>Pages <svg class="nav-links__arrow" width="9px"
+                                                      height="6px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-9x6">
+                                                      </use>
+                                                  </svg></span></a>
+                                          <div class="nav-links__menu">
+                                              <!-- .menu -->
+                                              <ul class="menu menu--layout--classic">
+                                                  <li><a  [routerLink]="['/about-us']">About Us</a></li>
+                                                  <li><a  [routerLink]="['/not-found']">404</a></li>
+                                                  <li><a  [routerLink]="['/terms-conditions']">Terms And Conditions</a>
+                                                  </li>
+                                                  <li><a  [routerLink]="['/faq']">FAQ</a></li>
+                                              </ul><!-- .menu / end -->
+                                          </div>
+                                      </li>
+                                      <li class="nav-links__item"><a  [routerLink]="['/contact-us']"><span>Contact
+                                                  Us</span></a></li>
+                                      
+                                  </ul>
+                              </div><!-- .nav-links / end -->
+                              <div class="nav-panel__indicators">
+                                  <div class="indicator"><a  [routerLink]="['/wishlist']" class="indicator__button"><span
+                                              class="indicator__area"><svg width="20px" height="20px">
+                                                  <use xlink:href="assets/templates/images/sprite.svg#heart-20"></use>
+                                              </svg> <span class="indicator__value">0</span></span></a></div>
+                                  <div class="indicator indicator--trigger--click"><a 
+                                          class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                                  height="20px">
+                                                  <use xlink:href="assets/templates/images/sprite.svg#cart-20"></use>
+                                              </svg> <span class="indicator__value">3</span></span></a>
+                                      <div class="indicator__dropdown">
+                                          <!-- .dropcart -->
+                                          <div class="dropcart">
+                                              <div class="dropcart__products-list">
+                                                  <div class="dropcart__product">
+                                                      <div class="dropcart__product-image"><a  [routerLink]="['/product']"><img
+                                                                  src="assets/templates/images/products/product-1.jpg" alt=""></a>
+                                                      </div>
+                                                      <div class="dropcart__product-info">
+                                                          <div class="dropcart__product-name"><a
+                                                                   [routerLink]="['/product']">Electric Planer Brandix
+                                                                  KL370090G 300 Watts</a></div>
+                                                          <ul class="dropcart__product-options">
+                                                              <li>Color: Yellow</li>
+                                                              <li>Material: Aluminium</li>
+                                                          </ul>
+                                                          <div class="dropcart__product-meta"><span
+                                                                  class="dropcart__product-quantity">2</span> x <span
+                                                                  class="dropcart__product-price">$699.00</span></div>
+                                                      </div><button type="button"
+                                                          class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
+                                                              width="10px" height="10px">
+                                                              <use xlink:href="assets/templates/images/sprite.svg#cross-10"></use>
+                                                          </svg></button>
+                                                  </div>
+                                                  <div class="dropcart__product">
+                                                      <div class="dropcart__product-image"><a  [routerLink]="['/product']"><img
+                                                                  src="assets/templates/images/products/product-2.jpg" alt=""></a>
+                                                      </div>
+                                                      <div class="dropcart__product-info">
+                                                          <div class="dropcart__product-name"><a
+                                                                   [routerLink]="['/product']">Undefined Tool IRadix DPS3000SY
+                                                                  2700 watts</a></div>
+                                                          <div class="dropcart__product-meta"><span
+                                                                  class="dropcart__product-quantity">1</span> x <span
+                                                                  class="dropcart__product-price">$849.00</span></div>
+                                                      </div><button type="button"
+                                                          class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
+                                                              width="10px" height="10px">
+                                                              <use xlink:href="assets/templates/images/sprite.svg#cross-10"></use>
+                                                          </svg></button>
+                                                  </div>
+                                                  <div class="dropcart__product">
+                                                      <div class="dropcart__product-image"><a  [routerLink]="['/product']"><img
+                                                                  src="assets/templates/images/products/product-5.jpg" alt=""></a>
+                                                      </div>
+                                                      <div class="dropcart__product-info">
+                                                          <div class="dropcart__product-name"><a
+                                                                   [routerLink]="['/product']">Brandix Router Power Tool
+                                                                  2017ERXPK</a></div>
+                                                          <ul class="dropcart__product-options">
+                                                              <li>Color: True Red</li>
+                                                          </ul>
+                                                          <div class="dropcart__product-meta"><span
+                                                                  class="dropcart__product-quantity">3</span> x <span
+                                                                  class="dropcart__product-price">$1,210.00</span>
+                                                          </div>
+                                                      </div><button type="button"
+                                                          class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
+                                                              width="10px" height="10px">
+                                                              <use xlink:href="assets/templates/images/sprite.svg#cross-10"></use>
+                                                          </svg></button>
+                                                  </div>
+                                              </div>
+                                              <div class="dropcart__totals">
+                                                  <table>
+                                                      <tr>
+                                                          <th>Subtotal</th>
+                                                          <td>$5,877.00</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th>Shipping</th>
+                                                          <td>$25.00</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th>Tax</th>
+                                                          <td>$0.00</td>
+                                                      </tr>
+                                                      <tr>
+                                                          <th>Total</th>
+                                                          <td>$5,902.00</td>
+                                                      </tr>
+                                                  </table>
+                                              </div>
+                                              <div class="dropcart__buttons"><a class="btn btn-secondary"
+                                                       [routerLink]="['/cart']">View Cart</a> <a class="btn btn-primary"
+                                                       [routerLink]="['/checkout']">Checkout</a></div>
+                                          </div><!-- .dropcart / end -->
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </header><!-- desktop site__header / end -->
+      <!-- site__body -->
+      <div class="site__body">
+          <div class="page-header">
+              <div class="page-header__container container">
+                  <div class="page-header__breadcrumb">
+                      <nav aria-label="breadcrumb">
+                          <ol class="breadcrumb">
+                              <li class="breadcrumb-item"><a  [routerLink]="['/index']">Home</a> <svg class="breadcrumb-arrow"
+                                      width="6px" height="9px">
+                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9"></use>
+                                  </svg></li>
+                              <li class="breadcrumb-item"><a href="#">Breadcrumb</a> <svg class="breadcrumb-arrow"
+                                      width="6px" height="9px">
+                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9"></use>
+                                  </svg></li>
+                              <li class="breadcrumb-item active" aria-current="page">Post</li>
+                          </ol>
+                      </nav>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="row">
+                  <div class="col-12 col-lg-8">
+                      <div class="block post post--layout--classic">
+                          <div class="post__header post-header post-header--layout--classic">
+                              <div class="post-header__categories"><a href="#">Latest news</a></div>
+                              <h1 class="post-header__title">Morbi Interdum Velit Quis Magna Placerat Lobortis Eget
+                              </h1>
+                              <div class="post-header__meta">
+                                  <div class="post-header__meta-item">By <a href="#">Jessica Moore</a></div>
+                                  <div class="post-header__meta-item"><a href="#">November 30, 2018</a></div>
+                                  <div class="post-header__meta-item"><a href="#">4 Comments</a></div>
+                              </div>
+                          </div>
+                          <div class="post__featured"><a href="#"><img src="assets/templates/images/posts/post-featured.jpg"
+                                      alt=""></a></div>
+                          <div class="post__content typography">
+                              <p>Vestibulum sagittis justo sit amet nisl semper, et pulvinar elit maximus. Morbi
+                                  interdum velit quis magna placerat lobortis eget pharetra magna. Nulla tristique
+                                  sollicitudin turpis, eget maximus risus faucibus non. Nulla vestibulum ipsum risus,
+                                  vitae maximus nunc bibendum quis.</p>
+                              <p>raesent eu consequat nibh. Quisque <i>ullamcorper</i>, augue eu fringilla sodales,
+                                  leo metus volutpat risus, at suscipit ipsum diam eget sem. Maecenas dictum elit in
+                                  enim molestie, <a href="#">vel sollicitudin erat ultricies</a>. Sed risus tellus,
+                                  molestie finibus dui quis, suscipit consequat ex.</p>
+                              <blockquote>
+                                  <p>Sed a dictum elit. In iaculis porttitor luctus. Maecenas ultricies dolor et
+                                      semper placerat. Proin at lectus felis.</p>
+                                  <p><cite>John Mcarthy</cite></p>
+                              </blockquote>
+                              <p>Vivamus in nisi at turpis rhoncus feugiat. Mauris scelerisque non ante et ultrices.
+                                  Donec sit amet sem lobortis, ullamcorper felis at, finibus sem. Curabitur tincidunt
+                                  neque nunc.</p>
+                              <h3>Nam Eget Blandit Diam</h3>
+                              <p>Quisque semper magna eget libero maximus, a sollicitudin nunc hendrerit. Cras
+                                  efficitur, ante vitae fringilla rutrum, mi tortor dapibus metus, in egestas metus
+                                  erat sit amet orci. Ut faucibus non ante dapibus efficitur. Nam eget blandit diam,
+                                  imperdiet condimentum neque. Donec risus nisi, aliquet a commodo ac, elementum vitae
+                                  leo.</p>
+                              <p>Vestibulum sagittis justo sit amet nisl semper, et pulvinar elit maximus. Morbi
+                                  interdum velit quis magna placerat lobortis eget pharetra magna.</p>
+                              <p><strong>Nulla fringilla:</strong> <a href="#">Donec aliquet at felis et dignissim</a>
+                              </p>
+                              <figure><a href="#"><img src="assets/templates/images/posts/post-featured.jpg" alt=""></a>
+                                  <figcaption>Nunc viverra, dui nec commodo dignissim, libero arcu.</figcaption>
+                              </figure>
+                              <p>Vestibulum non varius lectus. Cras vel elit id ligula laoreet imperdiet. Mauris quis
+                                  laoreet velit. Suspendisse sed velit nec ante facilisis pharetra.</p>
+                              <p>Phasellus ut elit vestibulum, dignissim mi non, suscipit ex. Praesent eu consequat
+                                  nibh. Quisque ullamcorper, augue eu fringilla sodales, leo metus volutpat risus, <a
+                                      href="#">at suscipit ipsum diam eget sem</a>. Maecenas dictum elit in enim
+                                  molestie, vel sollicitudin erat ultricies. Sed risus tellus, molestie finibus dui
+                                  quis, suscipit consequat ex.</p>
+                              <hr>
+                              <h2>Nunc Dapibus Varius Ligula</h2>
+                              <p>Maecenas ultrices arcu ut feugiat semper. Praesent dictum tincidunt justo, ac
+                                  tincidunt ante fermentum at. Vestibulum non varius lectus. Cras vel elit id ligula
+                                  laoreet imperdiet. Mauris quis laoreet velit. Suspendisse sed velit nec ante
+                                  facilisis pharetra. Duis vitae fermentum elit. Integer ac mattis elit.</p>
+                              <p>Mauris scelerisque non ante et ultrices. Donec sit amet sem lobortis:</p>
+                              <ol>
+                                  <li>Duis <strong>finibus imperdiet ultricies</strong>. Donec vel pretium turpis. In
+                                      auctor euismod posuere.</li>
+                                  <li>Praesent dictum tincidunt justo, ac tincidunt ante fermentum at. Vestibulum non
+                                      varius lectus. Cras vel elit id ligula laoreet imperdiet.</li>
+                                  <li><strong>In iaculis porttitor luctus</strong>. Maecenas ultricies dolor et semper
+                                      placerat. Proin at lectus felis. Quisque dapibus auctor justo id dictum.</li>
+                              </ol>
+                              <p>Ut faucibus non ante dapibus efficitur. Nam eget blandit diam, imperdiet condimentum
+                                  neque. Donec risus nisi, aliquet a commodo ac, elementum vitae leo.</p>
+                          </div>
+                          <div class="post__footer">
+                              <div class="post__tags-share-links">
+                                  <div class="post__tags tags">
+                                      <div class="tags__list"><a href="#">Promotion</a> <a href="#">Power Tool</a> <a
+                                              href="#">Wrench</a> <a href="#">Electrodes</a></div>
+                                  </div>
+                                  <div class="post__share-links share-links">
+                                      <ul class="share-links__list">
+                                          <li class="share-links__item share-links__item--type--like"><a
+                                                  href="#">Like</a></li>
+                                          <li class="share-links__item share-links__item--type--tweet"><a
+                                                  href="#">Tweet</a></li>
+                                          <li class="share-links__item share-links__item--type--pin"><a href="#">Pin
+                                                  It</a></li>
+                                          <li class="share-links__item share-links__item--type--counter"><a
+                                                  href="#">4K</a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                              <div class="post-author">
+                                  <div class="post-author__avatar"><a href="#"><img src="assets/templates/images/avatars/avatar-1.jpg"
+                                              alt=""></a></div>
+                                  <div class="post-author__info">
+                                      <div class="post-author__name"><a href="#">Jessica Moore</a></div>
+                                      <div class="post-author__about">Lorem ipsum dolor sit amet, consectetur
+                                          adipiscing elit. Curabitur suscipit suscipit mi, non tempor nulla finibus
+                                          eget. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</div>
+                                  </div>
+                              </div>
+                          </div>
+                          <section class="post__section">
+                              <h4 class="post__section-title">Related Posts</h4>
+                              <div class="related-posts">
+                                  <div class="related-posts__list">
+                                      <div class="related-posts__item post-card post-card--layout--related">
+                                          <div class="post-card__image"><a href="#"><img src="assets/templates/images/posts/post-1.jpg"
+                                                      alt=""></a></div>
+                                          <div class="post-card__info">
+                                              <div class="post-card__name"><a href="#">Philosophy That Addresses
+                                                      Topics Such As Goodness</a></div>
+                                              <div class="post-card__date">October 19, 2019</div>
+                                          </div>
+                                      </div>
+                                      <div class="related-posts__item post-card post-card--layout--related">
+                                          <div class="post-card__image"><a href="#"><img src="assets/templates/images/posts/post-2.jpg"
+                                                      alt=""></a></div>
+                                          <div class="post-card__info">
+                                              <div class="post-card__name"><a href="#">Logic Is The Study Of Reasoning
+                                                      And Argument Part 2</a></div>
+                                              <div class="post-card__date">September 5, 2019</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </section>
+                          <section class="post__section">
+                              <h4 class="post__section-title">Comments (4)</h4>
+                              <ol class="comments-list comments-list--level--0">
+                                  <li class="comments-list__item">
+                                      <div class="comment">
+                                          <div class="comment__avatar"><a href="#"><img
+                                                      src="assets/templates/images/avatars/avatar-1.jpg" alt=""></a></div>
+                                          <div class="comment__content">
+                                              <div class="comment__header">
+                                                  <div class="comment__author"><a href="#">Jessica Moore</a></div>
+                                                  <div class="comment__reply"><button type="button"
+                                                          class="btn btn-xs btn-light">Reply</button></div>
+                                              </div>
+                                              <div class="comment__text">Aliquam ullamcorper elementum sagittis. Etiam
+                                                  lacus lacus, mollis in mattis in, vehicula eu nulla. Nulla nec
+                                                  tellus pellentesque.</div>
+                                              <div class="comment__date">November 30, 2018</div>
+                                          </div>
+                                      </div>
+                                      <div class="comment-list__children">
+                                          <ol class="comments-list comments-list--level--1">
+                                              <li class="comments-list__item">
+                                                  <div class="comment">
+                                                      <div class="comment__avatar"><a href="#"><img
+                                                                  src="assets/templates/images/avatars/avatar-2.jpg" alt=""></a></div>
+                                                      <div class="comment__content">
+                                                          <div class="comment__header">
+                                                              <div class="comment__author"><a href="#">Adam Taylor</a>
+                                                              </div>
+                                                              <div class="comment__reply"><button type="button"
+                                                                      class="btn btn-xs btn-light">Reply</button>
+                                                              </div>
+                                                          </div>
+                                                          <div class="comment__text">Ut vitae finibus nisl, suscipit
+                                                              porttitor urna. Integer efficitur efficitur velit non
+                                                              pulvinar. Aliquam blandit volutpat arcu vel tristique.
+                                                              Integer commodo ligula id augue tincidunt faucibus.
+                                                          </div>
+                                                          <div class="comment__date">December 4, 2018</div>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                              <li class="comments-list__item">
+                                                  <div class="comment">
+                                                      <div class="comment__avatar"><a href="#"><img
+                                                                  src="assets/templates/images/avatars/avatar-3.jpg" alt=""></a></div>
+                                                      <div class="comment__content">
+                                                          <div class="comment__header">
+                                                              <div class="comment__author"><a href="#">Helena
+                                                                      Garcia</a></div>
+                                                              <div class="comment__reply"><button type="button"
+                                                                      class="btn btn-xs btn-light">Reply</button>
+                                                              </div>
+                                                          </div>
+                                                          <div class="comment__text">Suspendisse dignissim luctus
+                                                              metus vitae aliquam. Vestibulum sem odio, ullamcorper a
+                                                              imperdiet a, tincidunt sed lacus. Sed magna felis,
+                                                              consequat a erat ut, rutrum finibus odio.</div>
+                                                          <div class="comment__date">December 12, 2018</div>
+                                                      </div>
+                                                  </div>
+                                              </li>
+                                          </ol>
+                                      </div>
+                                  </li>
+                                  <li class="comments-list__item">
+                                      <div class="comment">
+                                          <div class="comment__avatar"><a href="#"><img
+                                                      src="assets/templates/images/avatars/avatar-4.jpg" alt=""></a></div>
+                                          <div class="comment__content">
+                                              <div class="comment__header">
+                                                  <div class="comment__author"><a href="#">Ryan Ford</a></div>
+                                                  <div class="comment__reply"><button type="button"
+                                                          class="btn btn-xs btn-light">Reply</button></div>
+                                              </div>
+                                              <div class="comment__text">Nullam at varius sapien. Sed sit amet
+                                                  condimentum elit.</div>
+                                              <div class="comment__date">December 5, 2018</div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ol>
+                          </section>
+                          <section class="post__section">
+                              <h4 class="post__section-title">Write A Comment</h4>
+                              <form>
+                                  <div class="form-row">
+                                      <div class="form-group col-md-4"><label for="comment-first-name">First
+                                              Name</label> <input type="text" class="form-control"
+                                              id="comment-first-name" placeholder="First Name"></div>
+                                      <div class="form-group col-md-4"><label for="comment-last-name">Last
+                                              Name</label> <input type="text" class="form-control"
+                                              id="comment-last-name" placeholder="Last Name"></div>
+                                      <div class="form-group col-md-4"><label for="comment-email">Email
+                                              Address</label> <input type="email" class="form-control"
+                                              id="comment-email" placeholder="Email Address"></div>
+                                  </div>
+                                  <div class="form-group"><label for="comment-content">Comment</label> <textarea
+                                          class="form-control" id="comment-content" rows="6"></textarea></div>
+                                  <div class="form-group mt-4"><button type="submit"
+                                          class="btn btn-primary btn-lg">Post Comment</button></div>
+                              </form>
+                          </section>
+                      </div>
+                  </div>
+                  <div class="col-12 col-lg-4">
+                      <div class="block block-sidebar block-sidebar--position--end">
+                          <div class="block-sidebar__item">
+                              <div class="widget-search">
+                                  <form class="widget-search__body"><input class="widget-search__input"
+                                          placeholder="Blog search..." type="text" autocomplete="off"
+                                          spellcheck="false"> <button class="widget-search__button" type="submit"><svg
+                                              width="20px" height="20px">
+                                              <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                          </svg></button></form>
+                              </div>
+                          </div>
+                          <div class="block-sidebar__item">
+                              <div class="widget-aboutus widget">
+                                  <h4 class="widget__title">About Blog</h4>
+                                  <div class="widget-aboutus__text">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                      elit. Sed tincidunt, erat in malesuada aliquam, est erat faucibus purus, eget
+                                      viverra nulla sem vitae neque. Quisque id sodales libero.</div>
+                                  <div class="widget-aboutus__socials">
+                                      <ul>
+                                          <li><a class="widget-aboutus__link widget-aboutus__link--rss"
+                                                  href="#" target="_blank"><i
+                                                      class="widget-social__icon fas fa-rss"></i></a></li>
+                                          <li><a class="widget-aboutus__link widget-aboutus__link--youtube"
+                                                  href="#" target="_blank"><i
+                                                      class="widget-aboutus__icon fab fa-youtube"></i></a></li>
+                                          <li><a class="widget-aboutus__link widget-aboutus__link--facebook"
+                                                  href="#" target="_blank"><i
+                                                      class="widget-aboutus__icon fab fa-facebook-f"></i></a></li>
+                                          <li><a class="widget-aboutus__link widget-aboutus__link--twitter"
+                                                  href="#" target="_blank"><i
+                                                      class="widget-aboutus__icon fab fa-twitter"></i></a></li>
+                                          <li><a class="widget-aboutus__link widget-aboutus__link--instagram"
+                                                  href="#" target="_blank"><i
+                                                      class="widget-aboutus__icon fab fa-instagram"></i></a></li>
+                                      </ul>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="block-sidebar__item">
+                              <div class="widget-categories widget-categories--location--blog widget">
+                                  <h4 class="widget__title">Categories</h4>
+                                  <ul class="widget-categories__list" data-collapse
+                                      data-collapse-opened-class="widget-categories__item--open">
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> Latest News</a></div>
+                                      </li>
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> Special Offers </a><button
+                                                  class="widget-categories__expander" type="button"
+                                                  data-collapse-trigger></button></div>
+                                          <div class="widget-categories__subs" data-collapse-content>
+                                              <ul>
+                                                  <li><a href="#">Spring Sales</a></li>
+                                                  <li><a href="#">Summer Sales</a></li>
+                                                  <li><a href="#">Autumn Sales</a></li>
+                                                  <li><a href="#">Christmas Sales</a></li>
+                                                  <li><a href="#">Other Sales</a></li>
+                                              </ul>
+                                          </div>
+                                      </li>
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> New Arrivals</a></div>
+                                      </li>
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> Reviews</a></div>
+                                      </li>
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> Drills and Mixers</a></div>
+                                      </li>
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> Cordless Screwdrivers</a></div>
+                                      </li>
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> Screwdrivers</a></div>
+                                      </li>
+                                      <li class="widget-categories__item" data-collapse-item>
+                                          <div class="widget-categories__row"><a href="#"><svg
+                                                      class="widget-categories__arrow" width="6px" height="9px">
+                                                      <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                      </use>
+                                                  </svg> Wrenches</a></div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="block-sidebar__item">
+                              <div class="widget-posts widget">
+                                  <h4 class="widget__title">Latest Posts</h4>
+                                  <div class="widget-posts__list">
+                                      <div class="widget-posts__item">
+                                          <div class="widget-posts__image"><a href="#"><img
+                                                      src="assets/templates/images/posts/post-1-thumbnail.jpg" alt=""></a></div>
+                                          <div class="widget-posts__info">
+                                              <div class="widget-posts__name"><a href="#">Philosophy That Addresses
+                                                      Topics Such As Goodness</a></div>
+                                              <div class="widget-posts__date">October 19, 2019</div>
+                                          </div>
+                                      </div>
+                                      <div class="widget-posts__item">
+                                          <div class="widget-posts__image"><a href="#"><img
+                                                      src="assets/templates/images/posts/post-2-thumbnail.jpg" alt=""></a></div>
+                                          <div class="widget-posts__info">
+                                              <div class="widget-posts__name"><a href="#">Logic Is The Study Of
+                                                      Reasoning And Argument Part 2</a></div>
+                                              <div class="widget-posts__date">September 5, 2019</div>
+                                          </div>
+                                      </div>
+                                      <div class="widget-posts__item">
+                                          <div class="widget-posts__image"><a href="#"><img
+                                                      src="assets/templates/images/posts/post-3-thumbnail.jpg" alt=""></a></div>
+                                          <div class="widget-posts__info">
+                                              <div class="widget-posts__name"><a href="#">Some Philosophers Specialize
+                                                      In One Or More Historical Periods</a></div>
+                                              <div class="widget-posts__date">August 12, 2019</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="block-sidebar__item">
+                              <div class="widget-newsletter widget">
+                                  <h4 class="widget-newsletter__title">Our Newsletter</h4>
+                                  <div class="widget-newsletter__text">Phasellus eleifend sapien felis, at
+                                      sollicitudin arcu semper mattis. Mauris quis mi quis ipsum tristique lobortis.
+                                      Nulla vitae est blandit rutrum.</div>
+                                  <form class="widget-newsletter__form" action="#"><label
+                                          for="widget-newsletter-email" class="sr-only">Email Address</label> <input
+                                          id="widget-newsletter-email" type="text" class="form-control"
+                                          placeholder="Email Address"> <button type="submit"
+                                          class="btn btn-primary mt-3">Subscribe</button></form>
+                              </div>
+                          </div>
+                          <div class="block-sidebar__item">
+                              <div class="widget-comments widget">
+                                  <h4 class="widget__title">Latest Comments</h4>
+                                  <ul class="widget-comments__list">
+                                      <li class="widget-comments__item">
+                                          <div class="widget-comments__author"><a href="#">Emma Williams</a></div>
+                                          <div class="widget-comments__content">In one general sense, philosophy is
+                                              associated with wisdom, intellectual culture and a search for
+                                              knowledge...</div>
+                                          <div class="widget-comments__meta">
+                                              <div class="widget-comments__date">3 minutes ago</div>
+                                              <div class="widget-comments__name">On <a href="#"
+                                                      title="Nullam at varius sapien sed sit amet condimentum elit">Nullam
+                                                      at varius sapien sed sit amet condimentum elit</a></div>
+                                          </div>
+                                      </li>
+                                      <li class="widget-comments__item">
+                                          <div class="widget-comments__author"><a href="#">Airic Ford</a></div>
+                                          <div class="widget-comments__content">In one general sense, philosophy is
+                                              associated with wisdom, intellectual culture and a search for
+                                              knowledge...</div>
+                                          <div class="widget-comments__meta">
+                                              <div class="widget-comments__date">25 minutes ago</div>
+                                              <div class="widget-comments__name">On <a href="#"
+                                                      title="Integer efficitur efficitur velit non pulvinar pellentesque dictum viverra">Integer
+                                                      efficitur efficitur velit non pulvinar pellentesque dictum
+                                                      viverra</a></div>
+                                          </div>
+                                      </li>
+                                      <li class="widget-comments__item">
+                                          <div class="widget-comments__author"><a href="#">Loyd Walker</a></div>
+                                          <div class="widget-comments__content">In one general sense, philosophy is
+                                              associated with wisdom, intellectual culture and a search for
+                                              knowledge...</div>
+                                          <div class="widget-comments__meta">
+                                              <div class="widget-comments__date">2 hours ago</div>
+                                              <div class="widget-comments__name">On <a href="#"
+                                                      title="Curabitur quam augue vestibulum in mauris fermentum pellentesque libero">Curabitur
+                                                      quam augue vestibulum in mauris fermentum pellentesque
+                                                      libero</a></div>
+                                          </div>
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="block-sidebar__item">
+                              <div class="widget-tags widget">
+                                  <h4 class="widget__title">Tags Cloud</h4>
+                                  <div class="tags tags--lg">
+                                      <div class="tags__list"><a href="#">Promotion</a> <a href="#">Power Tool</a> <a
+                                              href="#">New Arrivals</a> <a href="#">Screwdriver</a> <a
+                                              href="#">Wrench</a> <a href="#">Mounts</a> <a href="#">Electrodes</a> <a
+                                              href="#">Chainsaws</a> <a href="#">Manometers</a> <a href="#">Nails</a>
+                                          <a href="#">Air Guns</a> <a href="#">Cutting Discs</a></div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div><!-- site__body / end -->
+      <!-- site__footer -->
+      <footer class="site__footer">
+          <div class="site-footer">
+              <div class="container">
+                  <div class="site-footer__widgets">
+                      <div class="row">
+                          <div class="col-12 col-md-6 col-lg-4">
+                              <div class="site-footer__widget footer-contacts">
+                                  <h5 class="footer-contacts__title">Contact Us</h5>
+                                  <div class="footer-contacts__text">Lorem ipsum dolor sit amet, consectetur
+                                      adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.</div>
+                                  <ul class="footer-contacts__contacts">
+                                      <li><i class="footer-contacts__icon fas fa-globe-americas"></i> 715 Fake Street,
+                                          New York 10021 USA</li>
+                                      <li><i class="footer-contacts__icon far fa-envelope"></i> stroyka@example.com
+                                      </li>
+                                      <li><i class="footer-contacts__icon fas fa-mobile-alt"></i> (800) 060-0730,
+                                          (800) 060-0730</li>
+                                      <li><i class="footer-contacts__icon far fa-clock"></i> Mon-Sat 10:00pm - 7:00pm
+                                      </li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-6 col-md-3 col-lg-2">
+                              <div class="site-footer__widget footer-links">
+                                  <h5 class="footer-links__title">Information</h5>
+                                  <ul class="footer-links__list">
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">About
+                                              Us</a></li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Delivery
+                                              Information</a></li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Privacy
+                                              Policy</a></li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Brands</a>
+                                      </li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Contact
+                                              Us</a></li>
+                                      <li class="footer-links__item"><a href="#"
+                                              class="footer-links__link">Returns</a></li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Site
+                                              Map</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-6 col-md-3 col-lg-2">
+                              <div class="site-footer__widget footer-links">
+                                  <h5 class="footer-links__title">My Account</h5>
+                                  <ul class="footer-links__list">
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Store
+                                              Location</a></li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Order
+                                              History</a></li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Wish
+                                              List</a></li>
+                                      <li class="footer-links__item"><a href="#"
+                                              class="footer-links__link">Newsletter</a></li>
+                                      <li class="footer-links__item"><a href="#"
+                                              class="footer-links__link">Specials</a></li>
+                                      <li class="footer-links__item"><a href="#" class="footer-links__link">Gift
+                                              Certificates</a></li>
+                                      <li class="footer-links__item"><a href="#"
+                                              class="footer-links__link">Affiliate</a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                          <div class="col-12 col-md-12 col-lg-4">
+                              <div class="site-footer__widget footer-newsletter">
+                                  <h5 class="footer-newsletter__title">Newsletter</h5>
+                                  <div class="footer-newsletter__text">Praesent pellentesque volutpat ex, vitae auctor
+                                      lorem pulvinar mollis felis at lacinia.</div>
+                                  <form action="#" class="footer-newsletter__form"><label class="sr-only"
+                                          for="footer-newsletter-address">Email Address</label> <input type="text"
+                                          class="footer-newsletter__form-input form-control"
+                                          id="footer-newsletter-address" placeholder="Email Address..."> <button
+                                          class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
+                                  </form>
+                                  <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on
+                                      social networks</div>
+                                  <ul class="footer-newsletter__social-links">
+                                      <li
+                                          class="footer-newsletter__social-link footer-newsletter__social-link--facebook">
+                                          <a href="#" target="_blank"><i
+                                                  class="fab fa-facebook-f"></i></a></li>
+                                      <li
+                                          class="footer-newsletter__social-link footer-newsletter__social-link--twitter">
+                                          <a href="#" target="_blank"><i
+                                                  class="fab fa-twitter"></i></a></li>
+                                      <li
+                                          class="footer-newsletter__social-link footer-newsletter__social-link--youtube">
+                                          <a href="#" target="_blank"><i
+                                                  class="fab fa-youtube"></i></a></li>
+                                      <li
+                                          class="footer-newsletter__social-link footer-newsletter__social-link--instagram">
+                                          <a href="#" target="_blank"><i
+                                                  class="fab fa-instagram"></i></a></li>
+                                      <li class="footer-newsletter__social-link footer-newsletter__social-link--rss">
+                                          <a href="#" target="_blank"><i
+                                                  class="fas fa-rss"></i></a></li>
+                                  </ul>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+                  
+              </div>
+          </div>
+      </footer><!-- site__footer / end -->
+  </div><!-- site / end -->
+
+</ion-content>

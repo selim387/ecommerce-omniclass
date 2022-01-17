@@ -1,0 +1,23 @@
+{
+  "name": "sample",
+  "version": "1.0.0",
+  "description": "Connecting NodeJs & PostgreSQL",
+  "main": "app.js",
+  "dependencies": {
+    "async": "^3.2.0",
+    "child_process": "^1.0.2",
+    "cors": "^2.8.5",
+    "elementtree": "^0.1.7",
+    "express": "^4.17.1",
+    "eyes": "^0.1.8",
+    "fs": "0.0.1-security",
+    "method-override": "^3.0.0",
+    "morgan": "^1.10.0",
+    "pg": "^7.18.2",
+    "xml2js": "^0.4.23",
+    "xml2json": "^0.12.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

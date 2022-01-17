@@ -1,0 +1,66 @@
+
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp&display=block" rel="stylesheet">
+<!-- <mat-drawer-container class="example-container" [hasBackdrop]="false" >
+  <mat-drawer #drawer [mode]="side">I'm a drawer</mat-drawer>
+  
+  <mat-drawer-content>
+  -->
+
+    <button (click)="tree.treeControl.collapseAll()" >collapse
+      <mat-icon class="mat-icon-rtl-mirror" style="color: rgb(26, 168, 149)">
+        <!-- style="color: rgb(36, 58, 68)" -->
+      {{'keyboard_arrow_up'}}
+      </mat-icon>
+    </button>
+   
+    <button (click)="expand_pers()"  class="keyboard_arrow_down">expand
+      <mat-icon class="mat-icon-rtl-mirror" style="color: rgb(26, 168, 149)">
+        <!-- style="color: rgb(36, 58, 68)" -->
+      {{'keyboard_arrow_down'}}
+      </mat-icon>
+    </button>
+
+    <mat-tree #tree [dataSource]="dataSource" [treeControl]="treeControl" class="resize" >
+
+  <!-- This is the tree node template for leaf nodes -->
+  <mat-tree-node *matTreeNodeDef="let node"  matTreeNodePadding [style.display]="displayNode(node)" >
+    <!-- use a disabled button to provide padding for tree leaf -->
+    <button mat-icon-button disabled></button>
+
+    <button mat-button (click) = show_products(node) class="font_style">
+
+    <mat-icon class="mat-icon-rtl-mirror" style="color: rgb(26, 168, 149)">
+      {{ treeControl.isExpanded(node) ? "folder_open": "folder" }}
+    </mat-icon>
+      {{node.name.number}} {{node.name.title}} 
+  </button>
+
+  </mat-tree-node>
+  <!-- This is the tree node template for expandable nodes -->
+  <mat-tree-node *matTreeNodeDef="let node;when: hasChild" matTreeNodePadding [style.display]="displayNode(node)">
+    
+    <button mat-icon-button matTreeNodeToggle
+            [attr.aria-label]="'Toggle ' + node.name">
+       
+      <mat-icon class="mat-icon-rtl-mirror" style="color: rgb(26, 168, 149)">
+              <!-- style="color: rgb(36, 58, 68)" -->
+        {{treeControl.isExpanded(node) ? 'expand_more' : 'chevron_right'}}
+      </mat-icon>
+
+    </button>
+    <!-- class="material-icons-two-tone" -->
+    <button mat-flat-button (click) = show_products(node) class="font_style">
+
+    <mat-icon class="mat-icon-rtl-mirror" style="color: rgb(26, 168, 149)">
+      {{ treeControl.isExpanded(node) ? "folder_open": "folder" }}
+    </mat-icon>
+    
+    {{node.name.number}} {{node.name.title}} 
+  </button>
+  
+  </mat-tree-node>
+
+</mat-tree>
+
+<!-- </mat-drawer-content>
+</mat-drawer-container> -->

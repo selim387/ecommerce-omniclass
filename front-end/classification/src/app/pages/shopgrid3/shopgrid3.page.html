@@ -1,0 +1,1201 @@
+<ion-header>
+    <ion-toolbar>
+    
+    </ion-toolbar>
+        
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="format-detection" content="telephone=no">
+    
+    <link rel="icon" type="image/png" href="assets/templates/images/favicon.png"><!-- fonts -->
+    
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,400i,500,500i,700,700i"><!-- css -->
+  
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous"> -->
+    <!-- <script rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"></script>   -->
+    <!-- <link rel="stylesheet" src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">   -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.2/nouislider.css"/> -->
+   
+  <!-- <script  src="https://code.jquery.com/jquery-3.5.1.min.js"
+    integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+    crossorigin="anonymous"></script> -->
+    <script>svg4everybody();</script>
+    
+    <!-- font - fontawesome -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97489509-6"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-97489509-6');</script>
+  
+  </ion-header>
+  <ion-content padding>
+  
+    <!-- quickview-modal -->
+    <div id="quickview-modal" class="modal fade" tabindex="-1" role="dialog" aria-hidden="true">
+     <div class="modal-dialog modal-dialog-centered modal-xl">
+         <div class="modal-content"></div>
+     </div>
+ </div><!-- quickview-modal / end -->
+ <!-- mobilemenu -->
+ <div class="mobilemenu">
+     <div class="mobilemenu__backdrop"></div>
+     <div class="mobilemenu__body">
+         <div class="mobilemenu__header">
+             <div class="mobilemenu__title">Menu</div><button type="button" class="mobilemenu__close"><svg
+                     width="20px" height="20px">
+                     <use xlink:href="assets/templates/images/sprite.svg#cross-20"></use>
+                 </svg></button>
+         </div>
+         <div class="mobilemenu__content">
+             <ul class="mobile-links mobile-links--level--0" data-collapse
+                 data-collapse-opened-class="mobile-links__item--open">
+                 <li class="mobile-links__item" data-collapse-item>
+                     <div class="mobile-links__item-title"><a  [routerLink]="['/home']"
+                             class="mobile-links__item-link">Home</a> <button class="mobile-links__item-toggle"
+                             type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                 height="7px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                             </svg></button></div>
+
+                 </li>
+                 <li class="mobile-links__item" data-collapse-item>
+                     <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">Categories</a>
+                         <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                 class="mobile-links__item-arrow" width="12px" height="7px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                             </svg></button></div>
+                     <div class="mobile-links__item-sub-links" data-collapse-content>
+                         <ul class="mobile-links mobile-links--level--1">
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#"
+                                         class="mobile-links__item-link">Power Tools</a> <button
+                                         class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                             class="mobile-links__item-arrow" width="12px" height="7px">
+                                             <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                         </svg></button></div>
+                                 <div class="mobile-links__item-sub-links" data-collapse-content>
+                                     <ul class="mobile-links mobile-links--level--2">
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Engravers</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Wrenches</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Wall Chaser</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Pneumatic Tools</a></div>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#"
+                                         class="mobile-links__item-link">Machine Tools</a> <button
+                                         class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                             class="mobile-links__item-arrow" width="12px" height="7px">
+                                             <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                         </svg></button></div>
+                                 <div class="mobile-links__item-sub-links" data-collapse-content>
+                                     <ul class="mobile-links mobile-links--level--2">
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Thread Cutting</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Chip Blowers</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Sharpening Machines</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Pipe Cutters</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Slotting machines</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a href="#"
+                                                     class="mobile-links__item-link">Lathes</a></div>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="mobile-links__item" data-collapse-item>
+                     <div class="mobile-links__item-title"><a  [routerLink]="['/shopgrid3']"
+                             class="mobile-links__item-link">Shop</a> <button class="mobile-links__item-toggle"
+                             type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                 height="7px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                             </svg></button></div>
+                     <div class="mobile-links__item-sub-links" data-collapse-content>
+                         <ul class="mobile-links mobile-links--level--1">
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/shopgrid3']"
+                                         class="mobile-links__item-link">Shop Grid</a> <button
+                                         class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                             class="mobile-links__item-arrow" width="12px" height="7px">
+                                             <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                         </svg></button></div>
+                                 <div class="mobile-links__item-sub-links" data-collapse-content>
+                                     <ul class="mobile-links mobile-links--level--2">
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a
+                                                      [routerLink]="['/shopgrid3']"
+                                                     class="mobile-links__item-link">3 Columns Sidebar</a></div>
+                                         </li>
+                                         
+                                     </ul>
+                                 </div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/shoplist']"
+                                         class="mobile-links__item-link">Shop List</a></div>
+                             </li>
+                             
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/product']"
+                                         class="mobile-links__item-link">Product</a> <button
+                                         class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                             class="mobile-links__item-arrow" width="12px" height="7px">
+                                             <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                                         </svg></button></div>
+                                 <div class="mobile-links__item-sub-links" data-collapse-content>
+                                     <ul class="mobile-links mobile-links--level--2">
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a  [routerLink]="['/product']"
+                                                     class="mobile-links__item-link">Product</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a  [routerLink]="['/product-alt']"
+                                                     class="mobile-links__item-link">Product Alt</a></div>
+                                         </li>
+                                         <li class="mobile-links__item" data-collapse-item>
+                                             <div class="mobile-links__item-title"><a  [routerLink]="['/product-sidebar']"
+                                                     class="mobile-links__item-link">Product Sidebar</a></div>
+                                         </li>
+                                     </ul>
+                                 </div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/cart']"
+                                         class="mobile-links__item-link">Cart</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/checkout']"
+                                         class="mobile-links__item-link">Checkout</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/wishlist']"
+                                         class="mobile-links__item-link">Wishlist</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/compare']"
+                                         class="mobile-links__item-link">Compare</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/account']"
+                                         class="mobile-links__item-link">My Account</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/trackorder']"
+                                         class="mobile-links__item-link">Track Order</a></div>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="mobile-links__item" data-collapse-item>
+                     <div class="mobile-links__item-title"><a  [routerLink]="['/blog-list']"
+                             class="mobile-links__item-link">Blog</a> <button class="mobile-links__item-toggle"
+                             type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                 height="7px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                             </svg></button></div>
+                     <div class="mobile-links__item-sub-links" data-collapse-content>
+                         <ul class="mobile-links mobile-links--level--1">
+
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/blog-list']"
+                                         class="mobile-links__item-link">Blog List</a></div>
+                             </li>
+
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/post']"
+                                         class="mobile-links__item-link">Post Page</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/post-without-sidebar']"
+                                         class="mobile-links__item-link">Post Without Sidebar</a></div>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="mobile-links__item" data-collapse-item>
+                     <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">Pages</a>
+                         <button class="mobile-links__item-toggle" type="button" data-collapse-trigger><svg
+                                 class="mobile-links__item-arrow" width="12px" height="7px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                             </svg></button></div>
+                     <div class="mobile-links__item-sub-links" data-collapse-content>
+                         <ul class="mobile-links mobile-links--level--1">
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/about-us']"
+                                         class="mobile-links__item-link">About Us</a></div>
+                             </li>
+                            
+
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/not-found']"
+                                         class="mobile-links__item-link">404</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/terms-conditions']"
+                                         class="mobile-links__item-link">Terms And Conditions</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a  [routerLink]="['/faq']"
+                                         class="mobile-links__item-link">FAQ</a></div>
+                             </li>
+
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="mobile-links__item" data-collapse-item>
+                     <div class="mobile-links__item-title"><a data-collapse-trigger
+                             class="mobile-links__item-link">Currency</a> <button class="mobile-links__item-toggle"
+                             type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                 height="7px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                             </svg></button></div>
+                     <div class="mobile-links__item-sub-links" data-collapse-content>
+                         <ul class="mobile-links mobile-links--level--1">
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">€
+                                         Euro</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">£
+                                         Pound Sterling</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">$
+                                         US Dollar</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#" class="mobile-links__item-link">₽
+                                         Russian Ruble</a></div>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+                 <li class="mobile-links__item" data-collapse-item>
+                     <div class="mobile-links__item-title"><a data-collapse-trigger
+                             class="mobile-links__item-link">Language</a> <button class="mobile-links__item-toggle"
+                             type="button" data-collapse-trigger><svg class="mobile-links__item-arrow" width="12px"
+                                 height="7px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7"></use>
+                             </svg></button></div>
+                     <div class="mobile-links__item-sub-links" data-collapse-content>
+                         <ul class="mobile-links mobile-links--level--1">
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#"
+                                         class="mobile-links__item-link">English</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#"
+                                         class="mobile-links__item-link">French</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#"
+                                         class="mobile-links__item-link">German</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#"
+                                         class="mobile-links__item-link">Russian</a></div>
+                             </li>
+                             <li class="mobile-links__item" data-collapse-item>
+                                 <div class="mobile-links__item-title"><a href="#"
+                                         class="mobile-links__item-link">Italian</a></div>
+                             </li>
+                         </ul>
+                     </div>
+                 </li>
+             </ul>
+         </div>
+     </div>
+ </div><!-- mobilemenu / end -->
+ <!-- site -->
+     <!-- mobile site__header -->
+     <header class="site__header d-lg-none">
+         <div class="mobile-header mobile-header--sticky mobile-header--stuck">
+             <div class="mobile-header__panel">
+                 <div class="container">
+                     <div class="mobile-header__body"><button class="mobile-header__menu-button">
+                             <!-- <svg width="18px" height="14px">
+                                 <use xlink:href="assets/templates/images/sprite.svg#menu-18x14"></use>
+                             </svg> -->
+                         </button>
+                         <a class="mobile-header__logo"  [routerLink]="['/index']">
+                             <img src="/assets/templates/images/OMTI-logo.jpeg" alt="OMTI logo" width="180px" height="54px" >
+
+                             <!-- <svg xmlns="http://www.w3.org/2000/svg" width="120px" height="20px">
+                                 <path d="M118.5,20h-1.1c-0.6,0-1.2-0.4-1.4-1l-1.5-4h-6.1l-1.5,4c-0.2,0.6-0.8,1-1.4,1h-1.1c-1,0-1.8-1-1.4-2l1.1-3
+                              l1.5-4l3.6-10c0.2-0.6,0.8-1,1.4-1h1.6c0.6,0,1.2,0.4,1.4,1l3.6,10l1.5,4l1.1,3C120.3,19,119.5,20,118.5,20z M111.5,6.6l-1.6,4.4
+                              h3.2L111.5,6.6z M99.5,20h-1.4c-0.4,0-0.7-0.2-0.9-0.5L94,14l-2,3.5v1c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17
+                              C88,0.7,88.7,0,89.5,0h1C91.3,0,92,0.7,92,1.5v8L94,6l3.2-5.5C97.4,0.2,97.7,0,98.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3L96.3,10l4.5,7.8
+                              C101.4,18.8,100.7,20,99.5,20z M80.3,11.8L80,12.3v6.2c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-6.2l-0.3-0.5l-5.5-9.5
+                              c-0.6-1,0.2-2.3,1.3-2.3h1.4c0.4,0,0.7,0.2,0.9,0.5L76,4.3l2,3.5l2-3.5l2.2-3.8C82.4,0.2,82.7,0,83.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3
+                              L80.3,11.8z M60,20c-5.5,0-10-4.5-10-10S54.5,0,60,0s10,4.5,10,10S65.5,20,60,20z M60,4c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6
+                              S63.3,4,60,4z M47.8,17.8c0.6,1-0.2,2.3-1.3,2.3h-2L41,14h-4v4.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17
+                              C33,0.7,33.7,0,34.5,0H41c0.3,0,0.7,0,1,0.1c3.4,0.5,6,3.4,6,6.9c0,2.4-1.2,4.5-3.1,5.8L47.8,17.8z M42,4.2C41.7,4.1,41.3,4,41,4h-3
+                              c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h3c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.6-0.3,0.9-0.5C43.6,8.8,44,7.9,44,7C44,5.7,43.2,4.6,42,4.2z
+                               M29.5,4H25v14.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5V4h-4.5C15.7,4,15,3.3,15,2.5v-1C15,0.7,15.7,0,16.5,0h13
+                              C30.3,0,31,0.7,31,1.5v1C31,3.3,30.3,4,29.5,4z M6.5,20c-2.8,0-5.5-1.7-6.4-4c-0.4-1,0.3-2,1.3-2h1c0.5,0,0.9,0.3,1.2,0.7
+                              c0.2,0.3,0.4,0.6,0.8,0.8C4.9,15.8,5.8,16,6.5,16c1.5,0,2.8-0.9,2.8-2c0-0.7-0.5-1.3-1.2-1.6C7.4,12,7,11,7.4,10.3l0.4-0.9
+                              c0.4-0.7,1.2-1,1.8-0.6c0.6,0.3,1.2,0.7,1.6,1.2c1,1.1,1.7,2.5,1.7,4C13,17.3,10.1,20,6.5,20z M11.6,6h-1c-0.5,0-0.9-0.3-1.2-0.7
+                              C9.2,4.9,8.9,4.7,8.6,4.5C8.1,4.2,7.2,4,6.5,4C5,4,3.7,4.9,3.7,6c0,0.7,0.5,1.3,1.2,1.6C5.6,8,6,9,5.6,9.7l-0.4,0.9
+                              c-0.4,0.7-1.2,1-1.8,0.6c-0.6-0.3-1.2-0.7-1.6-1.2C0.6,8.9,0,7.5,0,6c0-3.3,2.9-6,6.5-6c2.8,0,5.5,1.7,6.4,4C13.3,4.9,12.6,6,11.6,6
+                              z"></path>
+                             </svg> -->
+                         </a>
+
+                         <div class="mobile-header__search">
+                             <form class="mobile-header__search-form" action="#"><input
+                                     class="mobile-header__search-input" name="search"
+                                     placeholder="Search over 10,000 products" aria-label="Site search" type="text"
+                                     autocomplete="off"> <button
+                                     class="mobile-header__search-button mobile-header__search-button--submit"
+                                     type="submit"><svg width="20px" height="20px">
+                                         <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                     </svg></button> <button
+                                     class="mobile-header__search-button mobile-header__search-button--close"
+                                     type="button"><svg width="20px" height="20px">
+                                         <use xlink:href="assets/templates/images/sprite.svg#cross-20"></use>
+                                     </svg></button>
+                                 <div class="mobile-header__search-body"></div>
+                             </form>
+                         </div>
+                         <div class="mobile-header__indicators">
+                             <div class="indicator indicator--mobile-search indicator--mobile d-sm-none"><button
+                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                             height="20px">
+                                             <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                         </svg></span></button></div>
+                             <div class="indicator indicator--mobile d-sm-flex d-none"><a  [routerLink]="['/wishlist']"
+                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                             height="20px">
+                                             <use xlink:href="assets/templates/images/sprite.svg#heart-20"></use>
+                                         </svg> <span class="indicator__value">0</span></span></a></div>
+                             <div class="indicator indicator--mobile"><a  [routerLink]="['/cart']"
+                                     class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                             height="20px">
+                                             <use xlink:href="assets/templates/images/sprite.svg#cart-20"></use>
+                                         </svg> <span class="indicator__value">3</span></span></a></div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </header><!-- mobile site__header / end -->
+     <!-- desktop site__header -->
+     <header class="site__header d-lg-block d-none">
+         <div class="site-header">
+             <!-- .topbar -->
+             <div class="site-header__topbar topbar">
+                 <div class="topbar__container container">
+                     <div class="topbar__row">
+                         <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                  [routerLink]="['/about-us']">About Us</a></div>
+                         <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                  [routerLink]="['/contact-us']">Contacts</a></div>
+                         <div class="topbar__item topbar__item--link"><a class="topbar-link" href="#">Store
+                                 Location</a></div>
+                         <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                  [routerLink]="['/track-order']">Track Order</a></div>
+                         <div class="topbar__item topbar__item--link"><a class="topbar-link"
+                                  [routerLink]="['/blog-list']">Blog</a></div>
+                         <div class="topbar__spring"></div>
+                         <div class="topbar__item">
+                             <div class="topbar-dropdown"><button class="topbar-dropdown__btn" type="button">My
+                                     Account <svg width="7px" height="5px">
+                                         <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                     </svg></button>
+                                 <div class="topbar-dropdown__body">
+                                     <!-- .menu -->
+                                     <ul class="menu menu--layout--topbar">
+                                         <li><a  [routerLink]="['/account']">Login</a></li>
+                                         <li><a  [routerLink]="['/account']">Register</a></li>
+                                         <li><a href="#">Orders</a></li>
+                                         <li><a href="#">Addresses</a></li>
+                                     </ul><!-- .menu / end -->
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="topbar__item">
+                             <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
+                                     type="button">Currency: <span class="topbar__item-value">USD</span> <svg
+                                         width="7px" height="5px">
+                                         <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                     </svg></button>
+                                 <div class="topbar-dropdown__body">
+                                     <!-- .menu -->
+                                     <ul class="menu menu--layout--topbar">
+                                         <li><a href="#">€ Euro</a></li>
+                                         <li><a href="#">£ Pound Sterling</a></li>
+                                         <li><a href="#">$ US Dollar</a></li>
+                                         <li><a href="#">₽ Russian Ruble</a></li>
+                                     </ul><!-- .menu / end -->
+                                 </div>
+                             </div>
+                         </div>
+                         <div class="topbar__item">
+                             <div class="topbar-dropdown"><button class="topbar-dropdown__btn"
+                                     type="button">Language: <span class="topbar__item-value">EN</span> <svg
+                                         width="7px" height="5px">
+                                         <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-7x5"></use>
+                                     </svg></button>
+                                 <div class="topbar-dropdown__body">
+                                     <!-- .menu -->
+                                     <ul class="menu menu--layout--topbar menu--with-icons">
+                                         <li><a href="#">
+                                                 <div class="menu__icon"><img
+                                                         srcset="assets/templates/images/languages/language-1.png, assets/templates/images/languages/language-1@2x.png 2x"
+                                                         src="assets/templates/images/languages/language-1.png" alt=""></div>English
+                                             </a></li>
+                                         <li><a href="#">
+                                                 <div class="menu__icon"><img
+                                                         srcset="assets/templates/images/languages/language-2.png, assets/templates/images/languages/language-2@2x.png 2x"
+                                                         src="assets/templates/images/languages/language-2.png" alt=""></div>French
+                                             </a></li>
+                                         <li><a href="#">
+                                                 <div class="menu__icon"><img
+                                                         srcset="assets/templates/images/languages/language-3.png, assets/templates/images/languages/language-3@2x.png 2x"
+                                                         src="assets/templates/images/languages/language-3.png" alt=""></div>German
+                                             </a></li>
+                                         <li><a href="#">
+                                                 <div class="menu__icon"><img
+                                                         srcset="assets/templates/images/languages/language-4.png, assets/templates/images/languages/language-4@2x.png 2x"
+                                                         src="assets/templates/images/languages/language-4.png" alt=""></div>Russian
+                                             </a></li>
+                                         <li><a href="#">
+                                                 <div class="menu__icon"><img
+                                                         srcset="assets/templates/images/languages/language-5.png, assets/templates/images/languages/language-5@2x.png 2x"
+                                                         src="assets/templates/images/languages/language-5.png" alt=""></div>Italian
+                                             </a></li>
+                                     </ul><!-- .menu / end -->
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div><!-- .topbar / end -->
+             <div class="site-header__nav-panel">
+                 <div class="nav-panel">
+                     <div class="nav-panel__container container">
+                         <div class="nav-panel__row">
+                             <div class="nav-panel__logo"><a  [routerLink]="['/index']">
+                                     <img src="/assets/templates/images/OMTI-logo.jpeg" alt="OMTI logo" width="180px" height="54px" >
+
+                                     <!-- width="180px" height="54px"  -->
+                                     <!-- <svg
+                                         xmlns="http://www.w3.org/2000/svg" width="120px" height="20px">
+                                         <path d="M118.5,20h-1.1c-0.6,0-1.2-0.4-1.4-1l-1.5-4h-6.1l-1.5,4c-0.2,0.6-0.8,1-1.4,1h-1.1c-1,0-1.8-1-1.4-2l1.1-3
+                              l1.5-4l3.6-10c0.2-0.6,0.8-1,1.4-1h1.6c0.6,0,1.2,0.4,1.4,1l3.6,10l1.5,4l1.1,3C120.3,19,119.5,20,118.5,20z M111.5,6.6l-1.6,4.4
+                              h3.2L111.5,6.6z M99.5,20h-1.4c-0.4,0-0.7-0.2-0.9-0.5L94,14l-2,3.5v1c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17
+                              C88,0.7,88.7,0,89.5,0h1C91.3,0,92,0.7,92,1.5v8L94,6l3.2-5.5C97.4,0.2,97.7,0,98.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3L96.3,10l4.5,7.8
+                              C101.4,18.8,100.7,20,99.5,20z M80.3,11.8L80,12.3v6.2c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-6.2l-0.3-0.5l-5.5-9.5
+                              c-0.6-1,0.2-2.3,1.3-2.3h1.4c0.4,0,0.7,0.2,0.9,0.5L76,4.3l2,3.5l2-3.5l2.2-3.8C82.4,0.2,82.7,0,83.1,0h1.4c1.2,0,1.9,1.3,1.3,2.3
+                              L80.3,11.8z M60,20c-5.5,0-10-4.5-10-10S54.5,0,60,0s10,4.5,10,10S65.5,20,60,20z M60,4c-3.3,0-6,2.7-6,6s2.7,6,6,6s6-2.7,6-6
+                              S63.3,4,60,4z M47.8,17.8c0.6,1-0.2,2.3-1.3,2.3h-2L41,14h-4v4.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5v-17
+                              C33,0.7,33.7,0,34.5,0H41c0.3,0,0.7,0,1,0.1c3.4,0.5,6,3.4,6,6.9c0,2.4-1.2,4.5-3.1,5.8L47.8,17.8z M42,4.2C41.7,4.1,41.3,4,41,4h-3
+                              c-0.6,0-1,0.4-1,1v4c0,0.6,0.4,1,1,1h3c0.3,0,0.7-0.1,1-0.2c0.3-0.1,0.6-0.3,0.9-0.5C43.6,8.8,44,7.9,44,7C44,5.7,43.2,4.6,42,4.2z
+                               M29.5,4H25v14.5c0,0.8-0.7,1.5-1.5,1.5h-1c-0.8,0-1.5-0.7-1.5-1.5V4h-4.5C15.7,4,15,3.3,15,2.5v-1C15,0.7,15.7,0,16.5,0h13
+                              C30.3,0,31,0.7,31,1.5v1C31,3.3,30.3,4,29.5,4z M6.5,20c-2.8,0-5.5-1.7-6.4-4c-0.4-1,0.3-2,1.3-2h1c0.5,0,0.9,0.3,1.2,0.7
+                              c0.2,0.3,0.4,0.6,0.8,0.8C4.9,15.8,5.8,16,6.5,16c1.5,0,2.8-0.9,2.8-2c0-0.7-0.5-1.3-1.2-1.6C7.4,12,7,11,7.4,10.3l0.4-0.9
+                              c0.4-0.7,1.2-1,1.8-0.6c0.6,0.3,1.2,0.7,1.6,1.2c1,1.1,1.7,2.5,1.7,4C13,17.3,10.1,20,6.5,20z M11.6,6h-1c-0.5,0-0.9-0.3-1.2-0.7
+                              C9.2,4.9,8.9,4.7,8.6,4.5C8.1,4.2,7.2,4,6.5,4C5,4,3.7,4.9,3.7,6c0,0.7,0.5,1.3,1.2,1.6C5.6,8,6,9,5.6,9.7l-0.4,0.9
+                              c-0.4,0.7-1.2,1-1.8,0.6c-0.6-0.3-1.2-0.7-1.6-1.2C0.6,8.9,0,7.5,0,6c0-3.3,2.9-6,6.5-6c2.8,0,5.5,1.7,6.4,4C13.3,4.9,12.6,6,11.6,6
+                              z"></path>
+                                     </svg> -->
+                                 </a>
+                             </div><!-- .nav-links -->
+                             <div class="nav-panel__nav-links nav-links">
+                                 <ul class="nav-links__list">
+                                     <li class="nav-links__item nav-links__item--with-submenu"><a
+                                              [routerLink]="['/index']"><span>Home <svg class="nav-links__arrow" width="9px"
+                                                     height="6px">
+                                                     
+                                                 </svg></span></a>
+
+                                     </li>
+
+                                     <li class="nav-links__item nav-links__item--with-submenu"><a
+                                              [routerLink]="['/shopgrid3']"><span>Shop <svg
+                                                     class="nav-links__arrow" width="9px" height="6px">
+                                                     <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-9x6">
+                                                     </use>
+                                                 </svg></span></a>
+                                         <div class="nav-links__menu">
+                                             <!-- .menu -->
+                                             <ul class="menu menu--layout--classic">
+                                                 <li><a  [routerLink]="['/shopgrid3']">Shop Grid <svg
+                                                             class="menu__arrow" width="6px" height="9px">
+                                                             <use
+                                                                 xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                             </use>
+                                                         </svg></a>
+                                                     <div class="menu__submenu">
+                                                         <!-- .menu -->
+                                                         <ul class="menu menu--layout--classic">
+                                                             <li><a  [routerLink]="['/shopgrid3']">3 Columns
+                                                                     Sidebar</a></li>
+                                                             
+                                                         </ul><!-- .menu / end -->
+                                                     </div>
+                                                 </li>
+                                                 <li><a  [routerLink]="['/shoplist']">Shop List</a></li>
+                                                 <li><a  [routerLink]="['/product']">Product <svg class="menu__arrow"
+                                                             width="6px" height="9px">
+                                                             <use
+                                                                 xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9">
+                                                             </use>
+                                                         </svg></a>
+                                                     <div class="menu__submenu">
+                                                         <!-- .menu -->
+                                                         <ul class="menu menu--layout--classic">
+                                                             <li><a  [routerLink]="['/product']">Product</a></li>
+                                                             <li><a  [routerLink]="['/product-alt']">Product Alt</a></li>
+                                                             <li><a  [routerLink]="['/product-sidebar']">Product Sidebar</a>
+                                                             </li>
+                                                         </ul><!-- .menu / end -->
+                                                     </div>
+                                                 </li>
+                                                 <li><a  [routerLink]="['/cart']">Cart</a></li>
+                                                 <li><a  [routerLink]="['/checkout']">Checkout</a></li>
+                                                 <li><a  [routerLink]="['/wishlist']">Wishlist</a></li>
+                                                 <li><a  [routerLink]="['/compare']">Compare</a></li>
+                                                 <li><a  [routerLink]="['/account']">My Account</a></li>
+                                                 <li><a  [routerLink]="['/trackorder']">Track Order</a></li>
+                                             </ul><!-- .menu / end -->
+                                         </div>
+                                     </li>
+                                     <li class="nav-links__item nav-links__item--with-submenu"><a
+                                              [routerLink]="['/blog-list']"><span>Blog <svg class="nav-links__arrow"
+                                                     width="9px" height="6px">
+                                                     <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-9x6">
+                                                     </use>
+                                                 </svg></span></a>
+                                         <div class="nav-links__menu">
+                                             <!-- .menu -->
+                                             <ul class="menu menu--layout--classic">
+
+                                                 <li><a  [routerLink]="['/blog-list']">Blog List</a></li>
+
+                                                 <li><a  [routerLink]="['/post']">Post Page</a></li>
+                                                 <li><a  [routerLink]="['/post-without-sidebar']">Post Without Sidebar</a>
+                                                 </li>
+                                             </ul><!-- .menu / end -->
+                                         </div>
+                                     </li>
+                                     <li class="nav-links__item nav-links__item--with-submenu"><a
+                                             href="#"><span>Pages <svg class="nav-links__arrow" width="9px"
+                                                     height="6px">
+                                                     <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-9x6">
+                                                     </use>
+                                                 </svg></span></a>
+                                         <div class="nav-links__menu">
+                                             <!-- .menu -->
+                                             <ul class="menu menu--layout--classic">
+                                                 <li><a  [routerLink]="['/about-us']">About Us</a></li>
+
+                                                 <li><a  [routerLink]="['/not-found']">404</a></li>
+                                                 <li><a  [routerLink]="['/terms-conditions']">Terms And Conditions</a>
+                                                 </li>
+                                                 <li><a  [routerLink]="['/faq']">FAQ</a></li>
+
+                                             </ul><!-- .menu / end -->
+                                         </div>
+                                     </li>
+                                     <li class="nav-links__item"><a  [routerLink]="['/contact-us']"><span>Contact
+                                                 Us</span></a></li>
+
+                                 </ul>
+                             </div><!-- .nav-links / end -->
+                             <div class="nav-panel__indicators">
+                                 <div class="indicator indicator--trigger--click"><button type="button"
+                                         class="indicator__button"><span class="indicator__area"><svg
+                                                 class="indicator__icon" width="20px" height="20px">
+                                                 <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                             </svg> <svg class="indicator__icon indicator__icon--open" width="20px"
+                                                 height="20px">
+                                                 <use xlink:href="assets/templates/images/sprite.svg#cross-20"></use>
+                                             </svg></span></button>
+                                     <div class="indicator__dropdown">
+                                         <div class="drop-search">
+                                             <form action="#" class="drop-search__form"><input
+                                                     class="drop-search__input" name="search"
+                                                     placeholder="Search over 10,000 products"
+                                                     aria-label="Site search" type="text" autocomplete="off"> <button
+                                                     class="drop-search__button drop-search__button--submit"
+                                                     type="submit"><svg width="20px" height="20px">
+                                                         <use xlink:href="assets/templates/images/sprite.svg#search-20"></use>
+                                                     </svg></button></form>
+                                         </div>
+                                     </div>
+                                 </div>
+                                 <div class="indicator"><a  [routerLink]="['/wishlist']" class="indicator__button"><span
+                                             class="indicator__area"><svg width="20px" height="20px">
+                                                 <use xlink:href="assets/templates/images/sprite.svg#heart-20"></use>
+                                             </svg> <span class="indicator__value">0</span></span></a></div>
+                                 <div class="indicator indicator--trigger--click"><a 
+                                         class="indicator__button"><span class="indicator__area"><svg width="20px"
+                                                 height="20px">
+                                                 <use xlink:href="assets/templates/images/sprite.svg#cart-20"></use>
+                                             </svg> <span class="indicator__value">3</span></span></a>
+                                     <div class="indicator__dropdown">
+                                         <!-- .dropcart -->
+                                         <div class="dropcart">
+                                             <div class="dropcart__products-list">
+                                                 <div class="dropcart__product">
+                                                     <div class="dropcart__product-image"><a  [routerLink]="['/product']"><img
+                                                                 src="assets/templates/images/products/product-1.jpg" alt=""></a>
+                                                     </div>
+                                                     <div class="dropcart__product-info">
+                                                         <div class="dropcart__product-name"><a
+                                                                  [routerLink]="['/product']">Electric Planer Brandix
+                                                                 KL370090G 300 Watts</a></div>
+                                                         <ul class="dropcart__product-options">
+                                                             <li>Color: Yellow</li>
+                                                             <li>Material: Aluminium</li>
+                                                         </ul>
+                                                         <div class="dropcart__product-meta"><span
+                                                                 class="dropcart__product-quantity">2</span> x <span
+                                                                 class="dropcart__product-price">$699.00</span></div>
+                                                     </div><button type="button"
+                                                         class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
+                                                             width="10px" height="10px">
+                                                             <use xlink:href="assets/templates/images/sprite.svg#cross-10"></use>
+                                                         </svg></button>
+                                                 </div>
+                                                 <div class="dropcart__product">
+                                                     <div class="dropcart__product-image"><a  [routerLink]="['/product']"><img
+                                                                 src="assets/templates/images/products/product-2.jpg" alt=""></a>
+                                                     </div>
+                                                     <div class="dropcart__product-info">
+                                                         <div class="dropcart__product-name"><a
+                                                                  [routerLink]="['/product']">Undefined Tool IRadix DPS3000SY
+                                                                 2700 watts</a></div>
+                                                         <div class="dropcart__product-meta"><span
+                                                                 class="dropcart__product-quantity">1</span> x <span
+                                                                 class="dropcart__product-price">$849.00</span></div>
+                                                     </div><button type="button"
+                                                         class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
+                                                             width="10px" height="10px">
+                                                             <use xlink:href="assets/templates/images/sprite.svg#cross-10"></use>
+                                                         </svg></button>
+                                                 </div>
+                                                 <div class="dropcart__product">
+                                                     <div class="dropcart__product-image"><a  [routerLink]="['/product']"><img
+                                                                 src="assets/templates/images/products/product-5.jpg" alt=""></a>
+                                                     </div>
+                                                     <div class="dropcart__product-info">
+                                                         <div class="dropcart__product-name"><a
+                                                                  [routerLink]="['/product']">Brandix Router Power Tool
+                                                                 2017ERXPK</a></div>
+                                                         <ul class="dropcart__product-options">
+                                                             <li>Color: True Red</li>
+                                                         </ul>
+                                                         <div class="dropcart__product-meta"><span
+                                                                 class="dropcart__product-quantity">3</span> x <span
+                                                                 class="dropcart__product-price">$1,210.00</span>
+                                                         </div>
+                                                     </div><button type="button"
+                                                         class="dropcart__product-remove btn btn-light btn-sm btn-svg-icon"><svg
+                                                             width="10px" height="10px">
+                                                             <use xlink:href="assets/templates/images/sprite.svg#cross-10"></use>
+                                                         </svg></button>
+                                                 </div>
+                                             </div>
+                                             <div class="dropcart__totals">
+                                                 <table>
+                                                     <tr>
+                                                         <th>Subtotal</th>
+                                                         <td>$5,877.00</td>
+                                                     </tr>
+                                                     <tr>
+                                                         <th>Shipping</th>
+                                                         <td>$25.00</td>
+                                                     </tr>
+                                                     <tr>
+                                                         <th>Tax</th>
+                                                         <td>$0.00</td>
+                                                     </tr>
+                                                     <tr>
+                                                         <th>Total</th>
+                                                         <td>$5,902.00</td>
+                                                     </tr>
+                                                 </table>
+                                             </div>
+                                             <div class="dropcart__buttons"><a class="btn btn-secondary"
+                                                      [routerLink]="['/cart']">View Cart</a> <a class="btn btn-primary"
+                                                      [routerLink]="['/checkout']">Checkout</a></div>
+                                         </div><!-- .dropcart / end -->
+                                     </div>
+                                 </div>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </header><!-- desktop site__header / end -->
+     <!-- site__body -->
+
+  
+        <!-- site__body -->
+        <div class="site__body">
+            <div class="page-header">
+                <div class="page-header__container container">
+                    <div class="page-header__breadcrumb">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="index-2.html">Home</a> <svg class="breadcrumb-arrow"
+                                        width="6px" height="9px">
+                                        <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9"></use>
+                                    </svg></li>
+                                <li class="breadcrumb-item"><a href="#">Breadcrumb</a> <svg class="breadcrumb-arrow"
+                                        width="6px" height="9px">
+                                        <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-6x9"></use>
+                                    </svg></li>
+                                <li class="breadcrumb-item active" aria-current="page">Screwdrivers</li>
+                            </ol>
+                        </nav>
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="container">
+                <div class="shop-layout shop-layout--sidebar--start">
+                    <div class="shop-layout__sidebar">
+                        <div class="block block-sidebar">
+                            <div class="block-sidebar__item">
+                                <div class="widget-filters widget" data-collapse
+                                    data-collapse-opened-class="filter--opened">
+                                    <h4 class="widget__title">Filters</h4>
+                                    <div class="widget-filters__list">
+                                        <div class="widget-filters__item">
+                                            <div class="filter filter--opened" data-collapse-item>
+                                              
+                                              <button type="button"
+                                                    class="filter__title" data-collapse-trigger>Categories <svg
+                                                        class="filter__arrow" width="12px" height="7px">
+                                                        <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-down-12x7">
+                                                        </use>
+                                                    </svg></button>
+  
+  
+                                                <div class="filter__body" data-collapse-content>
+                                                    <div class="filter__container">
+                                                        <div class="filter-categories">
+                                                            <ul class="filter-categories__list">
+                                                              <app-tree-view > </app-tree-view> 
+  
+                                                              
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+                                     
+                                </div>
+                            </div>
+             
+                        </div>
+                    </div>
+                    </div></div>
+                    <!-- <div class="handle"> </div>  --> 
+                    <div class="shop-layout__content">
+                        <div class="block">
+                            <div class="products-view">
+                                <div class="products-view__options">
+                                    <div class="view-options">
+                                        <div class="view-options__layout">
+                                            <div class="layout-switcher">
+                                                <div class="layout-switcher__list"><button data-layout="grid-3-sidebar"
+                                                        data-with-features="false" title="Grid" type="button"
+                                                        class="layout-switcher__button layout-switcher__button--active"><svg
+                                                            width="16px" height="16px">
+                                                            <use xlink:href="assets/templates/images/sprite.svg#layout-grid-16x16"></use>
+                                                        </svg></button> <button data-layout="grid-3-sidebar"
+                                                        data-with-features="true" title="Grid With Features"
+                                                        type="button" class="layout-switcher__button"><svg width="16px"
+                                                            height="16px">
+                                                            <use
+                                                                xlink:href="assets/templates/images/sprite.svg#layout-grid-with-details-16x16">
+                                                            </use>
+                                                        </svg></button> <button data-layout="list"
+                                                        data-with-features="false" title="List" type="button"
+                                                        class="layout-switcher__button"><svg width="16px" height="16px">
+                                                            <use xlink:href="assets/templates/images/sprite.svg#layout-list-16x16"></use>
+                                                        </svg></button></div>
+                                            </div>
+                                        </div>
+                                        <div class="view-options__legend">Showing 6 of 98 products</div>
+                                        <div class="view-options__divider"></div>
+                                        <div class="view-options__control"><label for="">Sort By</label>
+                                            <div><select class="form-control form-control-sm" name="" id="">
+                                                    <option value="">Default</option>
+                                                    <option value="">Name (A-Z)</option>
+                                                </select></div>
+                                        </div>
+                                        <div class="view-options__control"><label for="">Show</label>
+                                            <div><select class="form-control form-control-sm" name="" id="">
+                                                    <option value="">12</option>
+                                                    <option value="">24</option>
+                                                </select></div>
+                                        </div>
+                                    </div>
+                                </div>
+  
+  
+                                <!-- emna -->
+                                <div class="products-view__list products-list" data-layout="grid-3-sidebar" 
+                                data-with-features="false">
+  
+                                    <div  class="products-list__body">
+  
+                                      
+                                        <div *ngFor="let product of products" class="products-list__item">
+                                          <div class="product-card">
+                                              <button class="product-card__quickview"
+                                                    type="button"><svg width="16px" height="16px">
+                                                        <use xlink:href="assets/templates/images/sprite.svg#quickview-16"></use>
+                                                    </svg> <span class="fake-svg-icon"></span></button>
+                                                <div class="product-card__badges-list">
+                                                    <div class="product-card__badge product-card__badge--new">New</div>
+                                                </div>
+                                                <div class="product-card__image">
+                                                  <a href="product.html"><img
+                                                            src="assets/templates/images/products/product-1.jpg" alt="">
+                                                          </a>
+                                                  </div>
+                                                <div class="product-card__info">
+                                                    <div class="product-card__name"><a href="product.html">
+                                                      {{product.product_name}}
+                                                    </a></div>
+                                                    <div class="product-card__rating">
+                                                        <div class="rating">
+                                                            <div class="rating__body"><svg
+                                                                    class="rating__star rating__star--active"
+                                                                    width="13px" height="12px">
+                                                                    <g class="rating__fill">
+                                                                        <use xlink:href="assets/templates/images/sprite.svg#star-normal">
+                                                                        </use>
+                                                                    </g>
+                                                                    <g class="rating__stroke">
+                                                                        <use
+                                                                            xlink:href="assets/templates/images/sprite.svg#star-normal-stroke">
+                                                                        </use>
+                                                                    </g>
+                                                                </svg>
+                                                                <div
+                                                                    class="rating__star rating__star--only-edge rating__star--active">
+                                                                    <div class="rating__fill">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                    <div class="rating__stroke">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                </div><svg class="rating__star rating__star--active"
+                                                                    width="13px" height="12px">
+                                                                    <g class="rating__fill">
+                                                                        <use xlink:href="assets/templates/images/sprite.svg#star-normal">
+                                                                        </use>
+                                                                    </g>
+                                                                    <g class="rating__stroke">
+                                                                        <use
+                                                                            xlink:href="assets/templates/images/sprite.svg#star-normal-stroke">
+                                                                        </use>
+                                                                    </g>
+                                                                </svg>
+                                                                <div
+                                                                    class="rating__star rating__star--only-edge rating__star--active">
+                                                                    <div class="rating__fill">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                    <div class="rating__stroke">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                </div><svg class="rating__star rating__star--active"
+                                                                    width="13px" height="12px">
+                                                                    <g class="rating__fill">
+                                                                        <use xlink:href="assets/templates/images/sprite.svg#star-normal">
+                                                                        </use>
+                                                                    </g>
+                                                                    <g class="rating__stroke">
+                                                                        <use
+                                                                            xlink:href="assets/templates/images/sprite.svg#star-normal-stroke">
+                                                                        </use>
+                                                                    </g>
+                                                                </svg>
+                                                                <div
+                                                                    class="rating__star rating__star--only-edge rating__star--active">
+                                                                    <div class="rating__fill">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                    <div class="rating__stroke">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                </div><svg class="rating__star rating__star--active"
+                                                                    width="13px" height="12px">
+                                                                    <g class="rating__fill">
+                                                                        <use xlink:href="assets/templates/images/sprite.svg#star-normal">
+                                                                        </use>
+                                                                    </g>
+                                                                    <g class="rating__stroke">
+                                                                        <use
+                                                                            xlink:href="assets/templates/images/sprite.svg#star-normal-stroke">
+                                                                        </use>
+                                                                    </g>
+                                                                </svg>
+                                                                <div
+                                                                    class="rating__star rating__star--only-edge rating__star--active">
+                                                                    <div class="rating__fill">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                    <div class="rating__stroke">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                </div><svg class="rating__star" width="13px"
+                                                                    height="12px">
+                                                                    <g class="rating__fill">
+                                                                        <use xlink:href="assets/templates/images/sprite.svg#star-normal">
+                                                                        </use>
+                                                                    </g>
+                                                                    <g class="rating__stroke">
+                                                                        <use
+                                                                            xlink:href="assets/templates/images/sprite.svg#star-normal-stroke">
+                                                                        </use>
+                                                                    </g>
+                                                                </svg>
+                                                                <div class="rating__star rating__star--only-edge">
+                                                                    <div class="rating__fill">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                    <div class="rating__stroke">
+                                                                        <div class="fake-svg-icon"></div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="product-card__rating-legend">9 Reviews</div>
+                                                    </div>
+                                                    <ul class="product-card__features-list">
+                                                        <li>Speed: 750 RPM</li>
+                                                        <li>Power Source: Cordless-Electric</li>
+                                                        <li>Battery Cell Type: Lithium</li>
+                                                        <li>Voltage: 20 Volts</li>
+                                                        <li>Battery Capacity: 2 Ah</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="product-card__actions">
+                                                    <div class="product-card__availability">Availability: <span
+                                                            class="text-success">In Stock</span></div>
+                                                    <div class="product-card__prices"> {{product.price}}$ </div>
+                                                    <div class="product-card__buttons"><button
+                                                            class="btn btn-primary product-card__addtocart"
+                                                            type="button">Add To Cart</button> <button
+                                                            class="btn btn-secondary product-card__addtocart product-card__addtocart--list"
+                                                            type="button">Add To Cart</button> <button
+                                                            class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__wishlist"
+                                                            type="button"><svg width="16px" height="16px">
+                                                                <use xlink:href="assets/templates/images/sprite.svg#wishlist-16"></use>
+                                                            </svg> <span
+                                                                class="fake-svg-icon fake-svg-icon--wishlist-16"></span></button>
+                                                        <button
+                                                            class="btn btn-light btn-svg-icon btn-svg-icon--fake-svg product-card__compare"
+                                                            type="button"><svg width="16px" height="16px">
+                                                                <use xlink:href="assets/templates/images/sprite.svg#compare-16"></use>
+                                                            </svg> <span
+                                                                class="fake-svg-icon fake-svg-icon--compare-16"></span></button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                     
+                                    </div>
+                                </div>
+                                <div class="products-view__pagination">
+                                    <ul class="pagination justify-content-center">
+                                        <li class="page-item disabled"><a class="page-link page-link--with-arrow"
+                                                href="#" aria-label="Previous"><svg
+                                                    class="page-link__arrow page-link__arrow--left" aria-hidden="true"
+                                                    width="8px" height="13px">
+                                                    <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-left-8x13"></use>
+                                                </svg></a></li>
+                                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                        <li class="page-item active"><a class="page-link" href="#">2 <span
+                                                    class="sr-only">(current)</span></a></li>
+                                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                        <li class="page-item"><a class="page-link page-link--with-arrow" href="#"
+                                                aria-label="Next"><svg class="page-link__arrow page-link__arrow--right"
+                                                    aria-hidden="true" width="8px" height="13px">
+                                                    <use xlink:href="assets/templates/images/sprite.svg#arrow-rounded-right-8x13"></use>
+                                                </svg></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+        </div><!-- site__body / end -->
+        <!-- site__footer -->
+        <footer class="site__footer">
+            <div class="site-footer">
+                <div class="container">
+                    <div class="site-footer__widgets">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4">
+                                <div class="site-footer__widget footer-contacts">
+                                    <h5 class="footer-contacts__title">Contact Us</h5>
+                                    <div class="footer-contacts__text">Lorem ipsum dolor sit amet, consectetur
+                                        adipiscing elit. Integer in feugiat lorem. Pellentque ac placerat tellus.</div>
+                                    <ul class="footer-contacts__contacts">
+                                        <li><i class="footer-contacts__icon fas fa-globe-americas"></i> 715 Fake Street,
+                                            New York 10021 USA</li>
+                                        <li><i class="footer-contacts__icon far fa-envelope"></i> stroyka@example.com
+                                        </li>
+                                        <li><i class="footer-contacts__icon fas fa-mobile-alt"></i> (800) 060-0730,
+                                            (800) 060-0730</li>
+                                        <li><i class="footer-contacts__icon far fa-clock"></i> Mon-Sat 10:00pm - 7:00pm
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="site-footer__widget footer-links">
+                                    <h5 class="footer-links__title">Information</h5>
+                                    <ul class="footer-links__list">
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">About
+                                                Us</a></li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Delivery
+                                                Information</a></li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Privacy
+                                                Policy</a></li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Brands</a>
+                                        </li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Contact
+                                                Us</a></li>
+                                        <li class="footer-links__item"><a href="#"
+                                                class="footer-links__link">Returns</a></li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Site
+                                                Map</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-3 col-lg-2">
+                                <div class="site-footer__widget footer-links">
+                                    <h5 class="footer-links__title">My Account</h5>
+                                    <ul class="footer-links__list">
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Store
+                                                Location</a></li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Order
+                                                History</a></li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Wish
+                                                List</a></li>
+                                        <li class="footer-links__item"><a href="#"
+                                                class="footer-links__link">Newsletter</a></li>
+                                        <li class="footer-links__item"><a href="#"
+                                                class="footer-links__link">Specials</a></li>
+                                        <li class="footer-links__item"><a href="#" class="footer-links__link">Gift
+                                                Certificates</a></li>
+                                        <li class="footer-links__item"><a href="#"
+                                                class="footer-links__link">Affiliate</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-12 col-lg-4">
+                                <div class="site-footer__widget footer-newsletter">
+                                    <h5 class="footer-newsletter__title">Newsletter</h5>
+                                    <div class="footer-newsletter__text">Praesent pellentesque volutpat ex, vitae auctor
+                                        lorem pulvinar mollis felis at lacinia.</div>
+                                    <form action="#" class="footer-newsletter__form"><label class="sr-only"
+                                            for="footer-newsletter-address">Email Address</label> <input type="text"
+                                            class="footer-newsletter__form-input form-control"
+                                            id="footer-newsletter-address" placeholder="Email Address..."> <button
+                                            class="footer-newsletter__form-button btn btn-primary">Subscribe</button>
+                                    </form>
+                                    <div class="footer-newsletter__text footer-newsletter__text--social">Follow us on
+                                        social networks</div>
+                                    <ul class="footer-newsletter__social-links">
+                                        <li
+                                            class="footer-newsletter__social-link footer-newsletter__social-link--facebook">
+                                            <a href="#" target="_blank"><i
+                                                    class="fab fa-facebook-f"></i></a></li>
+                                        <li
+                                            class="footer-newsletter__social-link footer-newsletter__social-link--twitter">
+                                            <a href="#" target="_blank"><i
+                                                    class="fab fa-twitter"></i></a></li>
+                                        <li
+                                            class="footer-newsletter__social-link footer-newsletter__social-link--youtube">
+                                            <a href="#" target="_blank"><i
+                                                    class="fab fa-youtube"></i></a></li>
+                                        <li
+                                            class="footer-newsletter__social-link footer-newsletter__social-link--instagram">
+                                            <a href="#" target="_blank"><i
+                                                    class="fab fa-instagram"></i></a></li>
+                                        <li class="footer-newsletter__social-link footer-newsletter__social-link--rss">
+                                            <a href="#" target="_blank"><i
+                                                    class="fas fa-rss"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </footer><!-- site__footer / end -->
+  
+  
+  
+  <!-- <script src="node_modules/jquery/dist/jquery.min.js"> </script> -->
+  
+    
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+   
+  
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"> </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/noUiSlider/14.6.2/nouislider.min.js"> </script> 
+    <script src="node_modules/nouislider/distribute/nouislider.min.js"> </script>
+    <script src="assets/templates/js/main.js"></script> -->
+  
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/svg4everybody/2.1.9/svg4everybody.min.js"></script>
+    
+  
+  
+      
+    <script>svg4everybody();</script>
+  
+    <!-- font - fontawesome -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-97489509-6"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments); } gtag('js', new Date()); gtag('config', 'UA-97489509-6');</script>
+  
+  </ion-content>
+  
